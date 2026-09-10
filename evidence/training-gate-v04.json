@@ -1,0 +1,112 @@
+{
+  "status": "ok",
+  "before": {
+    "protocol": 1,
+    "status": "in_world",
+    "tick": 9214,
+    "sampledAtUnixMs": 1789049069634,
+    "control": {
+      "actionId": 6,
+      "appliedId": 4,
+      "appliedFrames": 0,
+      "action": "stop",
+      "active": false
+    },
+    "training": {
+      "allowed": true,
+      "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+      "reason": "verified_local_training_saves"
+    },
+    "worldSession": "9b7589693344483d8ab0099271999a76",
+    "world": {
+      "id": 1655013004,
+      "widthTiles": 4200,
+      "heightTiles": 1200
+    },
+    "player": {
+      "x": 32974.43,
+      "y": 3574,
+      "velocityX": 0,
+      "velocityY": 0,
+      "life": 22,
+      "maxLife": 100,
+      "mana": 20,
+      "dead": false,
+      "direction": -1
+    }
+  },
+  "rejections": {
+    "checkpoint": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}",
+    "reset": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}"
+  },
+  "disabled": {
+    "protocol": 1,
+    "status": "in_world",
+    "tick": 9241,
+    "sampledAtUnixMs": 1789049070084,
+    "control": {
+      "actionId": 6,
+      "appliedId": 4,
+      "appliedFrames": 0,
+      "action": "stop",
+      "active": false
+    },
+    "training": {
+      "allowed": false,
+      "profileId": null,
+      "reason": "training_profile_required"
+    },
+    "worldSession": "9b7589693344483d8ab0099271999a76",
+    "world": {
+      "id": 1655013004,
+      "widthTiles": 4200,
+      "heightTiles": 1200
+    },
+    "player": {
+      "x": 32991.83,
+      "y": 3562.4,
+      "velocityX": 4.2000003,
+      "velocityY": -2.2999997,
+      "life": 16,
+      "maxLife": 100,
+      "mana": 20,
+      "dead": false,
+      "direction": -1
+    }
+  },
+  "restored": {
+    "protocol": 1,
+    "status": "in_world",
+    "tick": 9304,
+    "sampledAtUnixMs": 1789049071134,
+    "control": {
+      "actionId": 6,
+      "appliedId": 4,
+      "appliedFrames": 0,
+      "action": "stop",
+      "active": false
+    },
+    "training": {
+      "allowed": true,
+      "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+      "reason": "verified_local_training_saves"
+    },
+    "worldSession": "9b7589693344483d8ab0099271999a76",
+    "world": {
+      "id": 1655013004,
+      "widthTiles": 4200,
+      "heightTiles": 1200
+    },
+    "player": {
+      "x": 33061.027,
+      "y": 3564.9727,
+      "velocityX": 0,
+      "velocityY": 0,
+      "life": 16,
+      "maxLife": 100,
+      "mana": 20,
+      "dead": false,
+      "direction": -1
+    }
+  }
+}

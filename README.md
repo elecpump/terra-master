@@ -2,9 +2,25 @@
 
 项目设计入口：[完整架构](docs/ARCHITECTURE.md) · [执行计划](docs/EXECUTION_PLAN.md) · [项目上下文](docs/PROJECT_CONTEXT.md)。长期目标为自主探索与最终通关；以下内容记录当前已实现原型。
 
-目前实现本机 TCP 观测、短时动作控制、按帧计数的 step 与玩家检查点重置（TerraBridge 0.3）。完整世界仍实时运行，尚未实现完整场景重置或训练算法。
+目前实现本机 TCP 观测、短时动作控制、按帧计数的 step 与玩家检查点重置（TerraBridge 0.4，protocol 1）。0.4 增加隔离训练存档校验、实例/世界会话标识与主动性能验收；完整世界仍实时运行，尚未实现完整场景重置或训练算法。
 
-## M0 诊断与被动基准（2026-09-10）
+## M0 第二切片：隔离存档与主动验收（2026-09-10）
+
+参见 [隔离实例与验收指南](docs/training-profile.md)。`training_profile.py` 创建全新独立目录；`build_bridge.ps1 -SavePath` 构建到该目录；`start_training.ps1` 使用安装版 launcher 启动，拒绝端口冲突。普通存档不会被自动复制或修改。
+
+0.4 的 checkpoint/reset 仅接受有效训练 marker 下的本地 `TM-Training-` 角色和世界，校验失败直接拒绝。`observe.training` 提供状态，`worldSession` 区分进入世界，ping 提供 instanceId、processId、timeMode、observationSchema。`TerraEnv`、两个主动回归脚本要求 0.4；只读 doctor/bench 兼容 0.3/0.4。
+
+本次结果：
+
+- 安装版编译打包 0 错误、0 警告；隔离实例实际加载 0.4，训练角色和世界校验通过。
+- 30 次混合 1/6/15 帧 idle 动作，合计精确执行 220 帧；含预检和一次 reset 共 5.091 秒，吞吐 5.89 transition/s。混合延迟 p50 116 ms / p95 280 ms；reset 30.8 ms。不是固定 6 帧策略的吞吐。
+- 控制、输入释放、1/6/15 帧移动与检查点恢复通过。撤销 marker 时 checkpoint/reset 均被服务器拒绝，恢复 marker 后重新允许。
+- 暂停时 idle 1 帧约 5 秒返回 timeout、执行 0 帧；恢复后旧超时结果不变，新 6 帧 step 完成。
+- 14 项离线测试通过。原始记录见 [第二切片报告](docs/m0-active-report.md)。最终补充的损坏 marker 数字格式异常处理已编译；实机记录来自补充前的 0.4 包，两个包哈希分别保留，尚未重载验证该异常分支。
+
+M0 尚未完成 30 分钟前后台稳定性、内存测量与训练依赖 smoke；D1 同步实验尚未开始。训练目录中的自然世界仍会刷怪、造成伤害，隔离目录不等于可重复重置的训练场景。
+
+## M0 首个切片历史：诊断与被动基准（2026-09-10）
 
 新增标准库工具 [diagnostics.py](diagnostics.py)，保留原型接口与模组 0.3。先建立项目环境：
 
@@ -76,19 +92,19 @@ python bridge_client.py stop
 
 实测切回聊天时曾出现 tick 停止；保持游戏前台后恢复。后续训练必须处理失焦/暂停，并实现动作与观测的时间对齐。
 
-## 动作验收
+## 动作验收（历史 0.3，当前脚本要求 0.4）
 
-运行 `python verify_controls.py` 后切回游戏。脚本等待实时更新，执行短时右移与跳跃，检查非法指令拒绝、游戏线程应用计数、到期释放和 stop；结果写入 `control_verification.json`。它会实际操作角色，请在测试世界运行。这些为实时限时动作，不保证精确执行固定帧数。
+运行 `python verify_controls.py` 后切回游戏。脚本等待实时更新，执行短时右移与跳跃，检查非法指令拒绝、游戏线程应用计数、到期释放和 stop；当前脚本结果写入 `evidence/control-verification-v04.json`。它会实际操作角色，请在 0.4 隔离训练世界运行。这些为实时限时动作，不保证精确执行固定帧数。
 
 2026-09-09 实机验收通过：右移 250ms 应用 15 帧，x 从 51214 到 51230.184；跳跃 250ms 应用 15 帧，y 从 6419.8164 降至 6328.129（向上约 92 像素）。两次动作均自动释放，主动 stop 生效，超长/负数时长及未知动作被拒绝。详细观测见 `control_verification.json`。
 
-## step 与玩家检查点（0.3）
+## step 与玩家检查点（0.3 历史行为，当前入口要求 0.4）
 
 ```python
 from terra_env import TerraEnv
 
 env = TerraEnv(frames=6)
-env.checkpoint()  # 在测试世界站稳后记录起点
+env.checkpoint()  # 0.4：在通过门禁的隔离训练世界站稳后记录起点
 observation, info = env.reset()
 observation, reward, terminated, truncated, info = env.step("right")
 env.close()
@@ -101,6 +117,6 @@ env.close()
 - `checkpoint()` 要求角色存活、静止、未骑乘和未使用抓钩。记录位置、生命、魔力与朝向；`reset()` 恢复这些值、清零速度与跳跃状态。重置点被实心方块占据时拒绝重置，退出世界后检查点失效。
 - reset **不恢复地图、敌人、弹幕、时间、随机数、背包、装备或全部玩家状态（如 Buff）**，不是完整环境快照。
 - **世界不会在 step 之间冻结**。执行帧数精确，但网络等待期间世界继续演化；结果缓存保证完成时的观测不被后续帧覆盖。当前架构不能声称确定性训练环境。
-- 自动验证：`python verify_steps.py`，随后保持游戏前台且角色站稳。该脚本会移动角色、恢复记录的生命和魔力，证据写入 `step_verification.json`。
+- 自动验证：`python verify_steps.py`，随后保持游戏前台且角色站稳。该脚本会移动角色、恢复记录的生命和魔力，当前证据写入 `evidence/step-verification-v04.json`。
 
-2026-09-09 0.3 实机验收通过：1、6、15 帧动作的 executedFrames 分别精确为 1、6、15；三次 reset 均恢复坐标 (51214, 6422)、生命、魔力和朝向，速度为零；重复读取已完成结果完全一致。并发操作拒绝及 stop 取消 pending 操作也已验证。证据见 `step_verification.json`。5 秒超时分支尚未做实机暂停验收。
+2026-09-09 0.3 实机验收通过：1、6、15 帧动作的 executedFrames 分别精确为 1、6、15；三次 reset 均恢复坐标 (51214, 6422)、生命、魔力和朝向，速度为零；重复读取已完成结果完全一致。并发操作拒绝及 stop 取消 pending 操作也已验证。证据见 `step_verification.json`。0.3 当时未做的 5 秒暂停超时分支，现已由上述 0.4 暂停与恢复证据补齐。

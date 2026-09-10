@@ -1,0 +1,1510 @@
+{
+  "schema": 1,
+  "mode": "steps",
+  "status": "ok",
+  "steps": [
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 2,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3528,
+          "sampledAtUnixMs": 1789048974867,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.03075360000002547
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 3,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3536,
+          "sampledAtUnixMs": 1789048975000,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.1037696999999298
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 4,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3552,
+          "sampledAtUnixMs": 1789048975267,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.2841926000000967
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 5,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3557,
+          "sampledAtUnixMs": 1789048975350,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.03116279999994731
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 6,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3565,
+          "sampledAtUnixMs": 1789048975484,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.10426759999995738
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 7,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3583,
+          "sampledAtUnixMs": 1789048975784,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.28027769999994234
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 8,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3586,
+          "sampledAtUnixMs": 1789048975834,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.062100299999883646
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 9,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3596,
+          "sampledAtUnixMs": 1789048976000,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.12411049999991519
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 10,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3613,
+          "sampledAtUnixMs": 1789048976284,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.2645294000001286
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 11,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3617,
+          "sampledAtUnixMs": 1789048976350,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.030900900000006004
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 12,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3626,
+          "sampledAtUnixMs": 1789048976500,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.11020120000011957
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 13,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3643,
+          "sampledAtUnixMs": 1789048976784,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.26538269999991826
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 14,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3646,
+          "sampledAtUnixMs": 1789048976834,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.01117300000009891
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 15,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3654,
+          "sampledAtUnixMs": 1789048976967,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.12484070000004976
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 16,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3672,
+          "sampledAtUnixMs": 1789048977267,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.2641358000000764
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 17,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3676,
+          "sampledAtUnixMs": 1789048977334,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.031032299999878887
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 18,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3685,
+          "sampledAtUnixMs": 1789048977484,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.12461919999987003
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 19,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3703,
+          "sampledAtUnixMs": 1789048977784,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.264080500000091
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 20,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3707,
+          "sampledAtUnixMs": 1789048977850,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.03099789999987479
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 21,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3716,
+          "sampledAtUnixMs": 1789048978001,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.13990000000012515
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 22,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3735,
+          "sampledAtUnixMs": 1789048978317,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.28020710000009785
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 23,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3740,
+          "sampledAtUnixMs": 1789048978400,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.030790499999966414
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 24,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3747,
+          "sampledAtUnixMs": 1789048978517,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.12235889999988103
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 25,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3766,
+          "sampledAtUnixMs": 1789048978834,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.2799123999998301
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 26,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3770,
+          "sampledAtUnixMs": 1789048978900,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.03126709999992272
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 27,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3779,
+          "sampledAtUnixMs": 1789048979050,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.10855039999978544
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 28,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3797,
+          "sampledAtUnixMs": 1789048979350,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.26494099999990794
+      }
+    },
+    {
+      "requestedFrames": 1,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 29,
+        "kind": "step",
+        "executedFrames": 1,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3799,
+          "sampledAtUnixMs": 1789048979384,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.030924800000093455
+      }
+    },
+    {
+      "requestedFrames": 6,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 30,
+        "kind": "step",
+        "executedFrames": 6,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3808,
+          "sampledAtUnixMs": 1789048979534,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.10889540000016495
+      }
+    },
+    {
+      "requestedFrames": 15,
+      "result": {
+        "protocol": 1,
+        "status": "completed",
+        "operationId": 31,
+        "kind": "step",
+        "executedFrames": 15,
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 3826,
+          "sampledAtUnixMs": 1789048979834,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "9b7589693344483d8ab0099271999a76",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33566,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 100,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        },
+        "requestWallSeconds": 0.272065800000064
+      }
+    }
+  ],
+  "resets": [
+    {
+      "protocol": 1,
+      "status": "completed",
+      "operationId": 32,
+      "kind": "reset",
+      "executedFrames": 0,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 3829,
+        "sampledAtUnixMs": 1789048979890,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "requestWallSeconds": 0.030805599999894184
+    }
+  ],
+  "budgetSeconds": 30.0,
+  "requestedSteps": 30,
+  "timeMode": "realtime",
+  "resetScope": "player_checkpoint",
+  "action": "idle",
+  "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+  "checkpoint": {
+    "protocol": 1,
+    "status": "completed",
+    "operationId": 1,
+    "kind": "checkpoint",
+    "executedFrames": 0,
+    "observation": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3524,
+      "sampledAtUnixMs": 1789048974801,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "requestWallSeconds": 0.03099090000000615
+  },
+  "elapsedSeconds": 5.090833099999827,
+  "transitionsPerSecondIncludingPreflightAndReset": 5.89294510558616,
+  "stepLatencyMs": {
+    "p50": 116.2800500000003,
+    "p95": 280.2459300000123
+  },
+  "resetLatencyMs": 30.805599999894184,
+  "executedFrames": 220,
+  "instanceId": "619df47a69764e7c9f9f09636d9df5b4",
+  "worldSession": "9b7589693344483d8ab0099271999a76",
+  "generatedAt": "2026-09-10T14:02:59.897552+00:00",
+  "stepLatencyByFramesMs": {
+    "1": {
+      "count": 10,
+      "p50": 30.961349999984122,
+      "p95": 48.2253599999012
+    },
+    "6": {
+      "count": 10,
+      "p50": 116.2800500000003,
+      "p95": 133.1233150000912
+    },
+    "15": {
+      "count": 10,
+      "p50": 268.7242499999911,
+      "p95": 282.43089500002725
+    }
+  },
+  "analysisNote": "Per-frame latency summary derived from recorded raw durations after capture."
+}

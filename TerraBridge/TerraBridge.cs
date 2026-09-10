@@ -28,6 +28,10 @@ public sealed partial class TerraBridge : Mod
         lock (actionLock) {
             CancelOperation("world_changed");
             checkpoint = null;
+            trainingAllowed = false;
+            profileId = null;
+            trainingReason = "world_changed";
+            worldSession = Guid.NewGuid().ToString("N");
             worldReady = ready;
             action = "stop";
             deadline = 0;
@@ -37,7 +41,10 @@ public sealed partial class TerraBridge : Mod
 
     private string Handle(string command)
     {
-        if (command == "ping") return "{\"protocol\":1,\"status\":\"ok\",\"bridge\":\"TerraBridge\",\"version\":\"0.3\"}";
+        if (command == "ping") return JsonSerializer.Serialize(new {
+            protocol = 1, status = "ok", bridge = "TerraBridge", version = "0.4",
+            instanceId, processId = Environment.ProcessId, timeMode = "realtime", observationSchema = 2
+        });
         if (command == "observe") return Volatile.Read(ref snapshot);
         string training = HandleTraining(command);
         if (training != null) return training;
@@ -178,12 +185,15 @@ public sealed class ObservationSystem : ModSystem
         if (Main.dedServ || Main.gameMenu || TerraBridge.Instance == null) return;
         ++tick;
         Player p = Main.LocalPlayer;
+        if (tick == 1 || tick % 60 == 0) TerraBridge.Instance.RefreshTrainingProfile();
         TerraBridge.Instance.PrepareObservation(p);
         // Copy values on the game thread; the network worker only reads immutable JSON.
         TerraBridge.Instance.Publish(new {
             protocol = 1, status = "in_world", tick,
             sampledAtUnixMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
             control = TerraBridge.Instance.ControlState(),
+            training = TerraBridge.Instance.TrainingState(),
+            worldSession = TerraBridge.Instance.WorldSession,
             world = new { id = Main.worldID, widthTiles = Main.maxTilesX, heightTiles = Main.maxTilesY },
             player = new {
                 x = p.position.X, y = p.position.Y,

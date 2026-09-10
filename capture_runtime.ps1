@@ -33,7 +33,7 @@ $manifest = [ordered]@{
     tmodloaderProductVersion=$assembly.VersionInfo.ProductVersion
     bundledRuntimes=$runtimes
     runtimeConfig=(Get-Content -LiteralPath (Join-Path $TmlInstallPath 'tModLoader.runtimeconfig.json') -Raw | ConvertFrom-Json)
-    expectedBridgeVersion='0.3'
+    expectedBridgeVersion=((Get-Content -LiteralPath (Join-Path $PSScriptRoot 'TerraBridge\build.txt') | Where-Object { $_ -match '^version\s*=' }) -replace '^version\s*=\s*', '').Trim()
     protocol=1
     buildCommand='.\build_bridge.ps1'
     artifacts=$artifacts

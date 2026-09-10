@@ -1,0 +1,294 @@
+[
+  {
+    "checkpoint": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3869,
+      "sampledAtUnixMs": 1789048980551,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    }
+  },
+  {
+    "frames": 1,
+    "observation": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3871,
+      "sampledAtUnixMs": 1789048980584,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566.08,
+        "y": 3574,
+        "velocityX": 0.08,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "reward": 0.005000000000109139,
+    "info": {
+      "operationId": 34,
+      "executedFrames": 1,
+      "world_continues_between_steps": true
+    }
+  },
+  {
+    "reset": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3874,
+      "sampledAtUnixMs": 1789048980634,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "info": {
+      "reset_scope": "player_checkpoint",
+      "operationId": 35
+    }
+  },
+  {
+    "frames": 6,
+    "observation": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3881,
+      "sampledAtUnixMs": 1789048980750,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33567.676,
+        "y": 3574,
+        "velocityX": 0.47999996,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "reward": 0.10474999999996726,
+    "info": {
+      "operationId": 36,
+      "executedFrames": 6,
+      "world_continues_between_steps": true
+    }
+  },
+  {
+    "reset": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3884,
+      "sampledAtUnixMs": 1789048980801,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "info": {
+      "reset_scope": "player_checkpoint",
+      "operationId": 37
+    }
+  },
+  {
+    "frames": 15,
+    "observation": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3900,
+      "sampledAtUnixMs": 1789048981067,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33575.594,
+        "y": 3574,
+        "velocityX": 1.1999999,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "reward": 0.5996249999998327,
+    "info": {
+      "operationId": 38,
+      "executedFrames": 15,
+      "world_continues_between_steps": true
+    }
+  },
+  {
+    "reset": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 3903,
+      "sampledAtUnixMs": 1789048981117,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "info": {
+      "reset_scope": "player_checkpoint",
+      "operationId": 39
+    }
+  }
+]

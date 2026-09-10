@@ -7,14 +7,15 @@ from bridge_client import request
 
 
 def main():
-    print("Waiting up to 120s for TerraBridge 0.3 and foreground single-player gameplay...", flush=True)
+    print("Waiting up to 120s for TerraBridge 0.4 and foreground single-player gameplay...", flush=True)
     end = time.monotonic() + 120
     previous = None
     while time.monotonic() < end:
         try:
             ping = request("ping")
             state = request()
-            if (ping.get("version") == "0.3" and state.get("status") == "in_world"
+            if (ping.get("version") == "0.4" and state.get("status") == "in_world"
+                    and state.get("training", {}).get("allowed")
                     and previous and state.get("tick", 0) > previous.get("tick", 0)
                     and time.time() * 1000 - state["sampledAtUnixMs"] < 500):
                 break
@@ -23,7 +24,7 @@ def main():
             pass
         time.sleep(0.5)
     else:
-        raise RuntimeError("No fresh gameplay. Load bridge 0.3 and keep game foreground.")
+        raise RuntimeError("No fresh gameplay. Load bridge 0.4 and keep game foreground.")
 
     results = []
     try:
@@ -63,9 +64,11 @@ def main():
         try:
             request("stop")
         finally:
-            Path(__file__).with_name("control_verification.json").write_text(
+            output = Path(__file__).parent / "evidence" / "control-verification-v04.json"
+            output.parent.mkdir(exist_ok=True)
+            output.write_text(
                 json.dumps(results, indent=2), encoding="utf-8")
-    print("LIVE CONTROL CHECKS PASSED; evidence saved to control_verification.json", flush=True)
+    print("LIVE CONTROL CHECKS PASSED; evidence saved to evidence/control-verification-v04.json", flush=True)
 
 
 if __name__ == "__main__":

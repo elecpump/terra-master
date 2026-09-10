@@ -1,0 +1,1188 @@
+[
+  {
+    "action": "right",
+    "ack": {
+      "protocol": 1,
+      "status": "accepted",
+      "actionId": 2,
+      "action": "right",
+      "durationMs": 250
+    },
+    "before": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 7101,
+      "sampledAtUnixMs": 1789049034417,
+      "control": {
+        "actionId": 1,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33566,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "samples": [
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7104,
+        "sampledAtUnixMs": 1789049034467,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 3,
+          "action": "right",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566.477,
+          "y": 3574,
+          "velocityX": 0.24,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7107,
+        "sampledAtUnixMs": 1789049034517,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 6,
+          "action": "right",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33567.676,
+          "y": 3574,
+          "velocityX": 0.47999996,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7111,
+        "sampledAtUnixMs": 1789049034584,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 10,
+          "action": "right",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33570.395,
+          "y": 3574,
+          "velocityX": 0.7999999,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7113,
+        "sampledAtUnixMs": 1789049034617,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 12,
+          "action": "right",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33572.234,
+          "y": 3574,
+          "velocityX": 0.95999986,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7116,
+        "sampledAtUnixMs": 1789049034667,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "right",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33575.594,
+          "y": 3574,
+          "velocityX": 1.1999999,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7119,
+        "sampledAtUnixMs": 1789049034717,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33577.996,
+          "y": 3574,
+          "velocityX": 0.59999996,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7122,
+        "sampledAtUnixMs": 1789049034767,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7124,
+        "sampledAtUnixMs": 1789049034800,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7128,
+        "sampledAtUnixMs": 1789049034867,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7131,
+        "sampledAtUnixMs": 1789049034917,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7134,
+        "sampledAtUnixMs": 1789049034967,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7137,
+        "sampledAtUnixMs": 1789049035017,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7141,
+        "sampledAtUnixMs": 1789049035084,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7144,
+        "sampledAtUnixMs": 1789049035134,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7148,
+        "sampledAtUnixMs": 1789049035200,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7152,
+        "sampledAtUnixMs": 1789049035267,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    ],
+    "applied": true,
+    "expired": true
+  },
+  {
+    "action": "jump",
+    "ack": {
+      "protocol": 1,
+      "status": "accepted",
+      "actionId": 3,
+      "action": "jump",
+      "durationMs": 250
+    },
+    "before": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 7153,
+      "sampledAtUnixMs": 1789049035284,
+      "control": {
+        "actionId": 2,
+        "appliedId": 2,
+        "appliedFrames": 15,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33578.594,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "samples": [
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7157,
+        "sampledAtUnixMs": 1789049035350,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 3,
+          "action": "jump",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3560.1697,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7161,
+        "sampledAtUnixMs": 1789049035417,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 7,
+          "action": "jump",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3541.7292,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7164,
+        "sampledAtUnixMs": 1789049035467,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 10,
+          "action": "jump",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3527.899,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7167,
+        "sampledAtUnixMs": 1789049035517,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 13,
+          "action": "jump",
+          "active": true
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3514.0686,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7170,
+        "sampledAtUnixMs": 1789049035567,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3500.6384,
+          "velocityX": 0,
+          "velocityY": -4.21,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7174,
+        "sampledAtUnixMs": 1789049035634,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3487.7983,
+          "velocityX": 0,
+          "velocityY": -2.6099997,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7178,
+        "sampledAtUnixMs": 1789049035700,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3481.3584,
+          "velocityX": 0,
+          "velocityY": -1.0099996,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7182,
+        "sampledAtUnixMs": 1789049035767,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3481.3184,
+          "velocityX": 0,
+          "velocityY": 0.5900004,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7185,
+        "sampledAtUnixMs": 1789049035817,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3485.4883,
+          "velocityX": 0,
+          "velocityY": 1.7900003,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7189,
+        "sampledAtUnixMs": 1789049035884,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3496.6482,
+          "velocityX": 0,
+          "velocityY": 3.3900006,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7191,
+        "sampledAtUnixMs": 1789049035917,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3504.6282,
+          "velocityX": 0,
+          "velocityY": 4.1900005,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7195,
+        "sampledAtUnixMs": 1789049035984,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3525.3882,
+          "velocityX": 0,
+          "velocityY": 5.790001,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7198,
+        "sampledAtUnixMs": 1789049036034,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3545.1582,
+          "velocityX": 0,
+          "velocityY": 6.990001,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7202,
+        "sampledAtUnixMs": 1789049036100,
+        "control": {
+          "actionId": 3,
+          "appliedId": 3,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "9b7589693344483d8ab0099271999a76",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33578.594,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 5.471924,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    ],
+    "applied": true,
+    "expired": true
+  },
+  {
+    "test": "explicit_stop",
+    "state": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 7217,
+      "sampledAtUnixMs": 1789049036351,
+      "control": {
+        "actionId": 5,
+        "appliedId": 4,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33578.516,
+        "y": 3574,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 100,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": -1
+      }
+    }
+  }
+]

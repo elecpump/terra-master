@@ -1,0 +1,88 @@
+{
+  "status": "ok",
+  "pausedReport": "evidence\\paused-timeout-v04.json",
+  "resumed": {
+    "protocol": 1,
+    "status": "in_world",
+    "tick": 14071,
+    "sampledAtUnixMs": 1789049251088,
+    "control": {
+      "actionId": 6,
+      "appliedId": 4,
+      "appliedFrames": 0,
+      "action": "stop",
+      "active": false
+    },
+    "training": {
+      "allowed": true,
+      "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+      "reason": "verified_local_training_saves"
+    },
+    "worldSession": "9b7589693344483d8ab0099271999a76",
+    "world": {
+      "id": 1655013004,
+      "widthTiles": 4200,
+      "heightTiles": 1200
+    },
+    "player": {
+      "x": 33225.31,
+      "y": 3558,
+      "velocityX": -1.2000015,
+      "velocityY": 0,
+      "life": 66,
+      "maxLife": 100,
+      "mana": 20,
+      "dead": false,
+      "direction": 1
+    }
+  },
+  "cachedTimeout": {
+    "protocol": 1,
+    "status": "timeout",
+    "operationId": 40,
+    "executedFrames": 0
+  },
+  "newStep": {
+    "protocol": 1,
+    "status": "completed",
+    "operationId": 41,
+    "kind": "step",
+    "executedFrames": 6,
+    "observation": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 14081,
+      "sampledAtUnixMs": 1789049251255,
+      "control": {
+        "actionId": 6,
+        "appliedId": 4,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "9b7589693344483d8ab0099271999a76",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33222.31,
+        "y": 3558,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 66,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "requestWallSeconds": 0.12366189999988819
+  }
+}

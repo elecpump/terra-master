@@ -62,6 +62,7 @@ public sealed partial class TerraBridge
                     return Error("Unknown action");
             } else if (parts.Length != 1) return Error("Command takes no arguments");
             if (!worldReady) return Error("Enter a single-player world first");
+            if (parts[0] != "step" && !trainingAllowed) return Error("training_profile_required");
             if (operation != null) return Error("Operation in progress");
             if (parts[0] == "reset" && checkpoint == null) return Error("Record checkpoint first");
             action = "stop";
@@ -81,6 +82,10 @@ public sealed partial class TerraBridge
             ExpireOperation();
             if (operation == null) return;
             if (p.dead) { CancelOperation("player_unavailable"); return; }
+            if (operation.Kind != "step") {
+                RefreshTrainingProfile();
+                if (!trainingAllowed) { CancelOperation("training_profile_required"); return; }
+            }
             if (operation.Kind == "checkpoint") {
                 if (p.mount.Active || p.grapCount > 0 || p.velocity != Vector2.Zero) {
                     CancelOperation("stand_still_unmounted_first"); return;

@@ -16,6 +16,9 @@ class TerraEnv:
         self.port = port
         self.frames = frames
         self.previous = None
+        ping = request("ping", self.port)
+        if ping.get("version") != "0.4" or ping.get("bridge") != "TerraBridge":
+            raise ValueError("TerraEnv requires TerraBridge 0.4 with training profile validation")
 
     def _run(self, command):
         ack = request(command, self.port)

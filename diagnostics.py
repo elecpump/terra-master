@@ -1,4 +1,4 @@
-"""Read-only TerraBridge 0.3 doctor and passive benchmark (no action/reset calls)."""
+"""Read-only TerraBridge 0.3/0.4 doctor and passive benchmark (no action/reset calls)."""
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent
 
 def compatible(ping):
     return (ping.get("protocol") == 1 and ping.get("bridge") == "TerraBridge"
-            and ping.get("status") == "ok" and ping.get("version") == "0.3")
+            and ping.get("status") == "ok" and ping.get("version") in ("0.3", "0.4"))
 
 
 def percentile(values, fraction):
@@ -40,8 +40,9 @@ def sample_summary(samples):
         issues.append("not_in_world")
     elif observations:
         worlds = {o["world"]["id"] for o in observations}
+        sessions = {o.get("worldSession") for o in observations}
         ticks = [o["tick"] for o in observations]
-        if len(worlds) != 1 or any(b < a for a, b in zip(ticks, ticks[1:])):
+        if len(worlds) != 1 or len(sessions) != 1 or any(b < a for a, b in zip(ticks, ticks[1:])):
             issues.append("world_or_tick_discontinuity")
         if any(s["sample_age_ms"] < -100 or s["sample_age_ms"] > 500 for s in samples):
             issues.append("stale_snapshot_or_clock_skew")
@@ -109,12 +110,15 @@ def doctor(port, send=request):
         report["manifest_error"] = str(exc)
     try:
         report["ping"] = send("ping", port)
+        if report.get("runtime_manifest") and report["ping"].get("version") != report["runtime_manifest"].get("expectedBridgeVersion"):
+            report["issues"].append("loaded_bridge_version_differs_from_manifest")
         if not compatible(report["ping"]):
             report["issues"].append("incompatible_bridge")
         else:
             report["samples"] = []
             collect(1, .25, port, send, report["samples"])
             report["sampling"] = sample_summary(report["samples"])
+            report["training_marker"] = report["samples"][-1]["observation"].get("training", "unknown_protocol_1")
             report["issues"].extend(report["sampling"]["issues"])
     except (OSError, ValueError, KeyError, TypeError) as exc:
         report["issues"].append("bridge_unavailable_or_invalid_response")
@@ -141,7 +145,7 @@ def main(argv=None):
         try:
             report["ping"] = request("ping", args.port)
             if not compatible(report["ping"]):
-                raise ValueError("Requires TerraBridge 0.3 / protocol 1")
+                raise ValueError("Requires TerraBridge 0.3 or 0.4 / protocol 1")
             collect(args.seconds, args.interval, args.port, samples=report["samples"])
             report.update(sample_summary(report["samples"]))
         except (OSError, ValueError, KeyError, TypeError) as exc:
