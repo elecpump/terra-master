@@ -104,15 +104,15 @@ def main():
         expected_process = Path(manifest["artifacts"]["tmodloader"]["path"]).parent / "dotnet" / "dotnet.exe"
         while True:
             ping = request("ping")
-            if ping.get("bridge") != "TerraBridge" or ping.get("status") != "ok" or ping.get("version") not in ("0.4", "0.4.1") or not ping.get("instanceId"):
-                raise ValueError("Requires TerraBridge 0.4/0.4.1 with instance/process identity")
+            if ping.get("bridge") != "TerraBridge" or ping.get("status") != "ok" or ping.get("version") not in ("0.4", "0.4.1", "0.4.2", "0.4.3") or not ping.get("instanceId"):
+                raise ValueError("Requires TerraBridge 0.4/0.4.1/0.4.2/0.4.3 with instance/process identity")
             state = request("observe")
             row = {"elapsedSeconds": time.perf_counter() - started, "instanceId": ping["instanceId"],
                    "sampleAgeMs": time.time() * 1000 - state["sampledAtUnixMs"] if "sampledAtUnixMs" in state else None,
                    "observation": state}
             samples.append(row)
             row["osFocused"] = window_focus(ping["processId"])
-            if ping["version"] == "0.4.1":
+            if ping["version"] in ("0.4.1", "0.4.2", "0.4.3"):
                 row["runtime"] = request("runtime")
                 row["runtimeAgeMs"] = time.time() * 1000 - row["runtime"].get("sampledAtUnixMs", 0)
             if len(samples) == 1 or len(samples) % 10 == 0:

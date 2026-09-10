@@ -43,7 +43,7 @@ public sealed partial class TerraBridge : Mod
     private string Handle(string command)
     {
         if (command == "ping") return JsonSerializer.Serialize(new {
-            protocol = 1, status = "ok", bridge = "TerraBridge", version = "0.4.1",
+            protocol = 1, status = "ok", bridge = "TerraBridge", version = "0.4.3",
             instanceId, processId = Environment.ProcessId, timeMode = "realtime", observationSchema = 2
         });
         if (command == "observe") return Volatile.Read(ref snapshot);

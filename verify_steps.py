@@ -7,7 +7,7 @@ from terra_env import TerraEnv
 
 
 def main():
-    print("Waiting for bridge 0.4/0.4.1; enter a test world, stand still, keep game foreground.", flush=True)
+    print("Waiting for bridge 0.4/0.4.1/0.4.2/0.4.3; enter a test world, stand still, keep game foreground.", flush=True)
     end = time.monotonic() + 180
     old = None
     while time.monotonic() < end:
@@ -15,7 +15,7 @@ def main():
             ping = request("ping")
             state = request()
             p = state.get("player", {})
-            if (ping.get("version") in ("0.4", "0.4.1") and state.get("status") == "in_world"
+            if (ping.get("version") in ("0.4", "0.4.1", "0.4.2", "0.4.3") and state.get("status") == "in_world"
                     and state.get("training", {}).get("allowed")
                     and old and state["tick"] > old.get("tick", 0)
                     and p.get("velocityX") == p.get("velocityY") == 0):

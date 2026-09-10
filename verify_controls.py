@@ -7,14 +7,14 @@ from bridge_client import request
 
 
 def main():
-    print("Waiting up to 120s for TerraBridge 0.4/0.4.1 and foreground single-player gameplay...", flush=True)
+    print("Waiting up to 120s for TerraBridge 0.4/0.4.1/0.4.2/0.4.3 and foreground single-player gameplay...", flush=True)
     end = time.monotonic() + 120
     previous = None
     while time.monotonic() < end:
         try:
             ping = request("ping")
             state = request()
-            if (ping.get("version") in ("0.4", "0.4.1") and state.get("status") == "in_world"
+            if (ping.get("version") in ("0.4", "0.4.1", "0.4.2", "0.4.3") and state.get("status") == "in_world"
                     and state.get("training", {}).get("allowed")
                     and previous and state.get("tick", 0) > previous.get("tick", 0)
                     and time.time() * 1000 - state["sampledAtUnixMs"] < 500):
@@ -24,7 +24,7 @@ def main():
             pass
         time.sleep(0.5)
     else:
-        raise RuntimeError("No fresh gameplay. Load bridge 0.4/0.4.1 and keep game foreground.")
+        raise RuntimeError("No fresh gameplay. Load bridge 0.4/0.4.1/0.4.2/0.4.3 and keep game foreground.")
 
     results = []
     try:

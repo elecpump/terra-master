@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "capturedAt": "2026-09-10T15:56:58.2499477Z",
+  "capturedAt": "2026-09-10T15:52:48.1886140Z",
   "terrariaVersion": "1.4.4.9",
   "tmodloaderProductVersion": "1.4.4.9+2026.07.3.0|2026.07|stable|Stable|666f69962d3bdffde54fc14025f02634965b4e7c|5250924198908260370",
   "bundledRuntimes": [
@@ -20,7 +20,7 @@
       }
     }
   },
-  "expectedBridgeVersion": "0.4.3",
+  "expectedBridgeVersion": "0.4.2",
   "protocol": 1,
   "buildCommand": ".\\build_bridge.ps1",
   "artifacts": {
@@ -31,14 +31,14 @@
     },
     "bridge_package": {
       "path": "D:\\code\\terra-master\\profiles\\training-m0\\Mods\\TerraBridge.tmod",
-      "sha256": "51e668eb719deab80b08d7e8cb64d2867b1267bd4cc19d143fb68a26f60bc380",
-      "bytes": 28513
+      "sha256": "fe78f5408989c15e076eceaf22ba43c36f5f3be98b97bb9b342caddeb5cb9310",
+      "bytes": 27962
     }
   },
   "sourceSha256": {
-    "BackgroundRuntime.cs": "270997d89bbf8a824e9d480f7fd089be483a870f2bee1e84519e29383419c264",
-    "build.txt": "b08c063417cb76c1028633d9062916822aa5f39ecc98725c48d7a5331670a00c",
-    "TerraBridge.cs": "d9fb21bb9da72ddc3d68c5b3491ad4a1e97752d0f680596384ed325593dc3554",
+    "BackgroundRuntime.cs": "7e7aaea1e24ff13885d4636e06decd79c89e9be169744b284faaa5db6217056e",
+    "build.txt": "b0bf7ef110cff704cd17e17b77cbda8f14d8fba71b669562d29cea0444108522",
+    "TerraBridge.cs": "1da3f414a8c75d90c905527fa7379b66c046c7d3052b9805bfadb71b0d4a7640",
     "TrainingOperations.cs": "453320eaf8cc516519ec128b7cf2e644ddd54a5142c65f12abc44c2b8ca5e75b",
     "TrainingProfile.cs": "268adc1d3765ba5b5db921fe5e731295125de2fa5a5eb6898c0a1105540a71d2"
   },

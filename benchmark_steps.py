@@ -1,4 +1,4 @@
-"""Bounded, single-client step/reset benchmark for verified TerraBridge 0.4/0.4.1 training saves."""
+"""Bounded, single-client step/reset benchmark for verified TerraBridge 0.4/0.4.1/0.4.2/0.4.3 training saves."""
 import argparse
 from datetime import datetime, timezone
 import json
@@ -34,8 +34,8 @@ class Benchmark:
     def preflight(self, fresh=True):
         ping = self.send("ping", self.port)
         if (ping.get("protocol") != 1 or ping.get("bridge") != "TerraBridge" or
-                ping.get("version") not in ("0.4", "0.4.1") or ping.get("status") != "ok" or not ping.get("instanceId")):
-            raise ValueError("Requires TerraBridge 0.4/0.4.1 / protocol 1")
+                ping.get("version") not in ("0.4", "0.4.1", "0.4.2", "0.4.3") or ping.get("status") != "ok" or not ping.get("instanceId")):
+            raise ValueError("Requires TerraBridge 0.4/0.4.1/0.4.2/0.4.3 / protocol 1")
         if self.instance_id and ping["instanceId"] != self.instance_id:
             raise ValueError("Bridge restarted")
         state = self.send("observe", self.port)

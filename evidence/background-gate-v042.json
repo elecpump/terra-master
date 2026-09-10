@@ -1,0 +1,282 @@
+{
+  "status": "ok",
+  "instanceId": "d943cb0e61a2441691a1c4259cae3d59",
+  "worldSession": "72859a8620984206953bcbacf4223bf0",
+  "before": {
+    "runtime": {
+      "protocol": 1,
+      "status": "ok",
+      "instanceId": "d943cb0e61a2441691a1c4259cae3d59",
+      "worldSession": "72859a8620984206953bcbacf4223bf0",
+      "sampledAtUnixMs": 1789055652950,
+      "focused": false,
+      "paused": false,
+      "menu": false,
+      "osFocused": false,
+      "autoPause": true,
+      "backgroundHookInstalled": true,
+      "backgroundEnabled": true,
+      "checkpointAvailable": false,
+      "currentPositionBlocker": null,
+      "checkpointBlocker": null
+    },
+    "observation": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 4016,
+      "sampledAtUnixMs": 1789055652949,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "training": {
+        "allowed": true,
+        "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+        "reason": "verified_local_training_saves"
+      },
+      "worldSession": "72859a8620984206953bcbacf4223bf0",
+      "world": {
+        "id": 1655013004,
+        "widthTiles": 4200,
+        "heightTiles": 1200
+      },
+      "player": {
+        "x": 33743.996,
+        "y": 3590,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 71,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    }
+  },
+  "phases": {
+    "False": [
+      {
+        "runtime": {
+          "protocol": 1,
+          "status": "ok",
+          "instanceId": "d943cb0e61a2441691a1c4259cae3d59",
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "sampledAtUnixMs": 1789055654965,
+          "focused": false,
+          "paused": true,
+          "menu": false,
+          "osFocused": false,
+          "autoPause": true,
+          "backgroundHookInstalled": true,
+          "backgroundEnabled": false,
+          "checkpointAvailable": false,
+          "currentPositionBlocker": null,
+          "checkpointBlocker": null
+        },
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 4020,
+          "sampledAtUnixMs": 1789055653016,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33743.996,
+            "y": 3590,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 71,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        }
+      },
+      {
+        "runtime": {
+          "protocol": 1,
+          "status": "ok",
+          "instanceId": "d943cb0e61a2441691a1c4259cae3d59",
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "sampledAtUnixMs": 1789055656982,
+          "focused": false,
+          "paused": true,
+          "menu": false,
+          "osFocused": false,
+          "autoPause": true,
+          "backgroundHookInstalled": true,
+          "backgroundEnabled": false,
+          "checkpointAvailable": false,
+          "currentPositionBlocker": null,
+          "checkpointBlocker": null
+        },
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 4020,
+          "sampledAtUnixMs": 1789055653016,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33743.996,
+            "y": 3590,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 71,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        }
+      }
+    ],
+    "True": [
+      {
+        "runtime": {
+          "protocol": 1,
+          "status": "ok",
+          "instanceId": "d943cb0e61a2441691a1c4259cae3d59",
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "sampledAtUnixMs": 1789055658983,
+          "focused": false,
+          "paused": false,
+          "menu": false,
+          "osFocused": false,
+          "autoPause": true,
+          "backgroundHookInstalled": true,
+          "backgroundEnabled": true,
+          "checkpointAvailable": false,
+          "currentPositionBlocker": null,
+          "checkpointBlocker": null
+        },
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 4120,
+          "sampledAtUnixMs": 1789055658983,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33662.996,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 58,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        }
+      },
+      {
+        "runtime": {
+          "protocol": 1,
+          "status": "ok",
+          "instanceId": "d943cb0e61a2441691a1c4259cae3d59",
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "sampledAtUnixMs": 1789055660982,
+          "focused": false,
+          "paused": false,
+          "menu": false,
+          "osFocused": false,
+          "autoPause": true,
+          "backgroundHookInstalled": true,
+          "backgroundEnabled": true,
+          "checkpointAvailable": false,
+          "currentPositionBlocker": null,
+          "checkpointBlocker": null
+        },
+        "observation": {
+          "protocol": 1,
+          "status": "in_world",
+          "tick": 4240,
+          "sampledAtUnixMs": 1789055660982,
+          "control": {
+            "actionId": 0,
+            "appliedId": 0,
+            "appliedFrames": 0,
+            "action": "stop",
+            "active": false
+          },
+          "training": {
+            "allowed": true,
+            "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+            "reason": "verified_local_training_saves"
+          },
+          "worldSession": "72859a8620984206953bcbacf4223bf0",
+          "world": {
+            "id": 1655013004,
+            "widthTiles": 4200,
+            "heightTiles": 1200
+          },
+          "player": {
+            "x": 33576.4,
+            "y": 3574,
+            "velocityX": 0,
+            "velocityY": 0,
+            "life": 45,
+            "maxLife": 100,
+            "mana": 20,
+            "dead": false,
+            "direction": 1
+          }
+        }
+      }
+    ]
+  },
+  "markerRestored": true
+}

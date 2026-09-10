@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent
 
 def compatible(ping):
     return (ping.get("protocol") == 1 and ping.get("bridge") == "TerraBridge"
-            and ping.get("status") == "ok" and ping.get("version") in ("0.3", "0.4", "0.4.1"))
+            and ping.get("status") == "ok" and ping.get("version") in ("0.3", "0.4", "0.4.1", "0.4.2", "0.4.3"))
 
 
 def percentile(values, fraction):
@@ -145,7 +145,7 @@ def main(argv=None):
         try:
             report["ping"] = request("ping", args.port)
             if not compatible(report["ping"]):
-                raise ValueError("Requires TerraBridge 0.3, 0.4 or 0.4.1 / protocol 1")
+                raise ValueError("Requires TerraBridge 0.3, 0.4, 0.4.1 or 0.4.2 / protocol 1")
             collect(args.seconds, args.interval, args.port, samples=report["samples"])
             report.update(sample_summary(report["samples"]))
         except (OSError, ValueError, KeyError, TypeError) as exc:
