@@ -1,0 +1,264 @@
+{
+  "status": "ok",
+  "issues": [],
+  "port": 17655,
+  "python": {
+    "version": "3.11.15",
+    "executable": "D:\\code\\terra-master\\.venv\\Scripts\\python.exe",
+    "project_venv": true
+  },
+  "training_marker": "unknown_protocol_1",
+  "device": {
+    "cuda": "not_tested"
+  },
+  "dependencies": {
+    "gymnasium": null,
+    "stable-baselines3": null,
+    "torch": null
+  },
+  "runtime_manifest": {
+    "schema": 1,
+    "capturedAt": "2026-09-10T13:41:57.6344833Z",
+    "terrariaVersion": "1.4.4.9",
+    "tmodloaderProductVersion": "1.4.4.9+2026.07.3.0|2026.07|stable|Stable|666f69962d3bdffde54fc14025f02634965b4e7c|5250924198908260370",
+    "bundledRuntimes": [
+      "Microsoft.NETCore.App 8.0.0 [D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\shared\\Microsoft.NETCore.App]"
+    ],
+    "runtimeConfig": {
+      "runtimeOptions": {
+        "tfm": "net8.0",
+        "framework": {
+          "name": "Microsoft.NETCore.App",
+          "version": "8.0.0"
+        },
+        "configProperties": {
+          "DEFAULT_STACK_SIZE": "400000",
+          "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+          "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
+        }
+      }
+    },
+    "expectedBridgeVersion": "0.3",
+    "protocol": 1,
+    "buildCommand": ".\\build_bridge.ps1",
+    "artifacts": {
+      "tmodloader": {
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\tModLoader.dll",
+        "sha256": "d530e508b2841e66d880ce279a609624b5ab66ce8093eedfa04f47c3d12d485c",
+        "bytes": 21875712
+      },
+      "bridge_package": {
+        "path": "C:\\Users\\Administrator\\Documents\\My Games\\Terraria\\tModLoader\\Mods\\TerraBridge.tmod",
+        "sha256": "21f2a5fca3c90d9145e59b685c4bd43b70c4d833c540eee6c8bcd55471f3153b",
+        "bytes": 21191
+      }
+    },
+    "sourceSha256": {
+      "build.txt": "00d0634f4f8b4c53141ef8047f6a35f5a019343c601863cc6035f977189c705b",
+      "TerraBridge.cs": "7749ced231e24657b5dcf53cfc181b1b960987bd9e3e0cfcb999b2132abfa042",
+      "TrainingOperations.cs": "7fb4b935a7eecfdab555ea1cc50d020106481dd7f7d72520f151c82094d856b4"
+    },
+    "provenance": "Installed files sampled, not rebuilt. Source/package correspondence and loaded package hash are not attested by protocol 1.",
+    "referenceSourceIsBuildDependency": false,
+    "trainingProfile": null,
+    "synchronization": "unverified"
+  },
+  "ping": {
+    "protocol": 1,
+    "status": "ok",
+    "bridge": "TerraBridge",
+    "version": "0.3"
+  },
+  "samples": [
+    {
+      "elapsed_s": 0.00020740000002206216,
+      "request_ms": 0.20729999999957727,
+      "sample_age_ms": 4.182861328125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7195,
+        "sampledAtUnixMs": 1789047762498,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.25106790000000956,
+      "request_ms": 0.39590000000089276,
+      "sample_age_ms": 4.688232421875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7210,
+        "sampledAtUnixMs": 1789047762748,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.5017526999999973,
+      "request_ms": 0.4787999999962267,
+      "sample_age_ms": 5.738525390625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7225,
+        "sampledAtUnixMs": 1789047762998,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.752685500000041,
+      "request_ms": 0.3956000000471249,
+      "sample_age_ms": 6.305419921875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7240,
+        "sampledAtUnixMs": 1789047763248,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 1.0136848000000214,
+      "request_ms": 13.569700000005014,
+      "sample_age_ms": 1.404052734375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7256,
+        "sampledAtUnixMs": 1789047763514,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    }
+  ],
+  "sampling": {
+    "status": "ok",
+    "issues": [],
+    "sample_count": 5,
+    "elapsed_s": 1.0134773999999993,
+    "tick_delta": 61,
+    "tick_per_wall_second": 60.188811314391465,
+    "observe_latency_ms": {
+      "p50": 0.39590000000089276,
+      "p95": 10.951520000003255
+    },
+    "transition_per_second": null,
+    "step_latency_ms": null,
+    "reset_latency_ms": null,
+    "game_memory_bytes": null,
+    "limitations": "Passive observations only; no transitions, reset or process-memory measurement. Focus and external/manual inputs are not observable in protocol 1. Tick samples do not establish whole-world synchronization."
+  },
+  "training_ready": false,
+  "generated_at": "2026-09-10T13:42:43.515404+00:00",
+  "report_schema": 1
+}

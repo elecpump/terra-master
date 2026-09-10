@@ -6,9 +6,9 @@
 
 开始非平凡任务时先读取：
 
-1. [PROJECT_CONTEXT.md](doc/PROJECT_CONTEXT.md)：目标、已确认决策和当前切片。
+1. [PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md)：目标、已确认决策和当前切片。
 2. [README.md](README.md)：已实现能力、运行命令与实机证据。
-3. 根据任务读取 [ARCHITECTURE.md](doc/ARCHITECTURE.md) 和 [EXECUTION_PLAN.md](doc/EXECUTION_PLAN.md) 的相关章节。
+3. 根据任务读取 [ARCHITECTURE.md](docs/ARCHITECTURE.md) 和 [EXECUTION_PLAN.md](docs/EXECUTION_PLAN.md) 的相关章节。
 
 架构和计划中的目标能力不等于已经实现。以当前代码、运行版本和实测结果核对事实。用户当前明确指令优先；范围变化时同步更新相关项目文档，不把旧计划当作拒绝新需求的理由。
 

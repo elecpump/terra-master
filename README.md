@@ -1,8 +1,29 @@
 # TerraMaster：游戏接入原型
 
-项目设计入口：[完整架构](doc/ARCHITECTURE.md) · [执行计划](doc/EXECUTION_PLAN.md) · [项目上下文](doc/PROJECT_CONTEXT.md)。长期目标为自主探索与最终通关；以下内容记录当前已实现原型。
+项目设计入口：[完整架构](docs/ARCHITECTURE.md) · [执行计划](docs/EXECUTION_PLAN.md) · [项目上下文](docs/PROJECT_CONTEXT.md)。长期目标为自主探索与最终通关；以下内容记录当前已实现原型。
 
 目前实现本机 TCP 观测、短时动作控制、按帧计数的 step 与玩家检查点重置（TerraBridge 0.3）。完整世界仍实时运行，尚未实现完整场景重置或训练算法。
+
+## M0 诊断与被动基准（2026-09-10）
+
+新增标准库工具 [diagnostics.py](diagnostics.py)，保留原型接口与模组 0.3。先建立项目环境：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.lock
+.\capture_runtime.ps1
+.\.venv\Scripts\python.exe diagnostics.py doctor --output runs/m0/doctor.json
+.\.venv\Scripts\python.exe diagnostics.py bench --seconds 5 --output runs/m0/bench.json
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+- `doctor` 核对已安装程序集/模组 SHA-256、桥接版本、Python 环境、依赖及一秒内 tick 新鲜度。退出码 0 表示本次诊断通过，1 表示未就绪；**不表示可以训练**，`training_ready` 固定为 false。
+- `bench` 只发送 ping/observe，不移动角色或恢复检查点。记录 tick/s、观测请求 p50/p95、原始快照和采样耗时；帧号回退、切世界、死亡、暂停/陈旧快照均不输出有效 tick/s。请求失败时保留此前采样。
+- step/transition 吞吐、reset 时间和游戏内存尚未测量，对应字段为 null。当前协议也不能验证训练标记、窗口焦点、人工输入或完整实体同步。
+- [capture_runtime.ps1](capture_runtime.ps1) 记录安装版和源码哈希；可指定 `-TmlInstallPath`、`-ModPath`、`-OutputPath`。仅在有意更新基线时重新采集；doctor 用现有清单检测安装文件漂移。磁盘包哈希不能证明游戏当前加载的包与源码对应。
+- `.venv/`、`runs/`、`profiles/`、存档、模型与构建缓存被 Git 排除，小型验收证据保存在 `evidence/`。当前依赖锁为空第三方依赖集；Gymnasium/SB3/PyTorch 与 CUDA 验证留待后续切片。
+
+本次实机结果：TerraBridge 0.3 / protocol 1；21 个观测样本，5.022 秒推进 301 tick（59.93 tick/s），观测请求延迟 p50 0.40 ms / p95 23.24 ms。6 项离线测试通过。详见 [基线报告](docs/baseline-report.md)。这是短时被动采样，M0 的 30 分钟前后台稳定性、隔离训练存档、暂停超时验收及 D1 同步实验仍未完成。
 
 ## 已验证环境
 

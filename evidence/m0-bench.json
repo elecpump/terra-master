@@ -1,0 +1,742 @@
+{
+  "status": "ok",
+  "mode": "passive_observe",
+  "samples": [
+    {
+      "elapsed_s": 0.00018289999997023187,
+      "request_ms": 0.1828000000045904,
+      "sample_age_ms": 9.48388671875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7261,
+        "sampledAtUnixMs": 1789047763598,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.25082279999998036,
+      "request_ms": 0.38949999998294516,
+      "sample_age_ms": 9.76708984375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7276,
+        "sampledAtUnixMs": 1789047763848,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.5016830999999797,
+      "request_ms": 0.40039999998953135,
+      "sample_age_ms": 10.6181640625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7291,
+        "sampledAtUnixMs": 1789047764098,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.7771029999999541,
+      "request_ms": 25.003999999967164,
+      "sample_age_ms": 3.211669921875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7308,
+        "sampledAtUnixMs": 1789047764381,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 1.0278668999999923,
+      "request_ms": 0.39140000001225417,
+      "sample_age_ms": 3.810791015625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7323,
+        "sampledAtUnixMs": 1789047764631,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 1.290147300000001,
+      "request_ms": 11.86870000003637,
+      "sample_age_ms": 16.109619140625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7338,
+        "sampledAtUnixMs": 1789047764881,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 1.5548034999999913,
+      "request_ms": 14.458300000001145,
+      "sample_age_ms": 13.6884765625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7354,
+        "sampledAtUnixMs": 1789047765148,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 1.8183767999999532,
+      "request_ms": 13.183299999980136,
+      "sample_age_ms": 11.542236328125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7370,
+        "sampledAtUnixMs": 1789047765414,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 2.082735599999978,
+      "request_ms": 14.196700000013607,
+      "sample_age_ms": 8.88134765625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7386,
+        "sampledAtUnixMs": 1789047765681,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 2.3334130000000073,
+      "request_ms": 0.38850000004231333,
+      "sample_age_ms": 9.361083984375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7401,
+        "sampledAtUnixMs": 1789047765931,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 2.584091399999977,
+      "request_ms": 0.3702000000203043,
+      "sample_age_ms": 10.057861328125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7416,
+        "sampledAtUnixMs": 1789047766181,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 2.8449566999999547,
+      "request_ms": 10.730299999977433,
+      "sample_age_ms": 4.0849609375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7432,
+        "sampledAtUnixMs": 1789047766448,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 3.0954756999999518,
+      "request_ms": 0.38679999994428726,
+      "sample_age_ms": 4.4208984375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7447,
+        "sampledAtUnixMs": 1789047766698,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 3.3459894999999733,
+      "request_ms": 0.4149000000097658,
+      "sample_age_ms": 4.900634765625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7462,
+        "sampledAtUnixMs": 1789047766948,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 3.59644609999998,
+      "request_ms": 0.3641999999786094,
+      "sample_age_ms": 5.41455078125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7477,
+        "sampledAtUnixMs": 1789047767198,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 3.8469506999999794,
+      "request_ms": 0.3939000000059423,
+      "sample_age_ms": 5.89599609375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7492,
+        "sampledAtUnixMs": 1789047767448,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 4.1204119999999875,
+      "request_ms": 23.240499999985786,
+      "sample_age_ms": 13.46240234375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7508,
+        "sampledAtUnixMs": 1789047767714,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 4.37132889999998,
+      "request_ms": 0.3821000000243657,
+      "sample_age_ms": 14.267333984375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7523,
+        "sampledAtUnixMs": 1789047767964,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 4.622118999999998,
+      "request_ms": 0.3837000000430635,
+      "sample_age_ms": 15.06103515625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7538,
+        "sampledAtUnixMs": 1789047768214,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 4.882958799999983,
+      "request_ms": 10.572700000011537,
+      "sample_age_ms": 9.197021484375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7554,
+        "sampledAtUnixMs": 1789047768481,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsed_s": 5.022522399999957,
+      "request_ms": 22.276499999975385,
+      "sample_age_ms": 15.629150390625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 7562,
+        "sampledAtUnixMs": 1789047768614,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51290.3,
+          "y": 6406,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 82,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    }
+  ],
+  "ping": {
+    "protocol": 1,
+    "status": "ok",
+    "bridge": "TerraBridge",
+    "version": "0.3"
+  },
+  "issues": [],
+  "sample_count": 21,
+  "elapsed_s": 5.022339499999987,
+  "tick_delta": 301,
+  "tick_per_wall_second": 59.93222879496712,
+  "observe_latency_ms": {
+    "p50": 0.40039999998953135,
+    "p95": 23.240499999985786
+  },
+  "transition_per_second": null,
+  "step_latency_ms": null,
+  "reset_latency_ms": null,
+  "game_memory_bytes": null,
+  "limitations": "Passive observations only; no transitions, reset or process-memory measurement. Focus and external/manual inputs are not observable in protocol 1. Tick samples do not establish whole-world synchronization.",
+  "generated_at": "2026-09-10T13:42:48.629629+00:00",
+  "report_schema": 1
+}
