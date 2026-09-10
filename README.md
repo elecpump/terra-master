@@ -4,6 +4,18 @@
 
 目前实现本机 TCP 观测、短时动作控制、按帧计数的 step 与玩家检查点重置（TerraBridge 0.4，protocol 1）。0.4 增加隔离训练存档校验、实例/世界会话标识与主动性能验收；完整世界仍实时运行，尚未实现完整场景重置或 Terraria 训练管线。
 
+## 0.4.1 服务端修复包（已加载，部分实测）
+
+checkpoint/reset 已共用碰撞和玩家状态校验，拒绝原因分别报告；有效训练 marker 可通过 `runInBackground: true` 开启后台更新，保留手动暂停。新增只读 `runtime` 诊断；采样工具用 Windows 前台进程独立验证焦点，避免将 FNA 的 IsActive 误当实际窗口状态。安装版编译打包 0 错误、0 警告，23 项 Python 测试通过。已加载 0.4.1，平地短 step 与前后 reset、实机碰撞位置拒绝通过；系统确认后台连续运行 10 秒。该采样含死亡，未满足长稳或训练门槛；后台补丁的因果对照及手动暂停回归仍待验证。详见 [0.4.1 修复说明](docs/runtime-fixes-v041.md)。
+
+## 主动基准预检修复（2026-09-10）
+
+`benchmark_steps.py` 现在先保存检查点并立即试恢复，核验位置、生命、魔力、朝向和零速度后才提交 step；末尾仍再次 reset。失败结果保留在 `preflightReset`，不输出成功吞吐。总预算与吞吐计时现在包含初始预检、checkpoint 和两次 reset，报告 schema 升至 2，旧报告不改写。
+
+20 项离线测试通过，覆盖不可恢复起点、恢复偏差和预检耗尽预算。当前实机角色死亡，脚本在提交动作前拒绝运行，见 [预检记录](evidence/benchmark-preflight-v04.json)。此修复是客户端提前验收；模组 0.4 的 checkpoint/reset 判断差异及失焦停滞尚未修复，不代表 M0 长稳验收完成。运行方法见 [训练指南](docs/training-profile.md)。
+
+随后用户保持游戏前台，14 个只读样本中 tick 从 24955 推进至 25741，角色复活并在 (33566, 3574) 站稳；同一实例完成 1/6/15 帧 idle（共 22 帧）及前后两次 reset，总耗时 0.664 秒。见 [恢复采样](evidence/foreground-recovery-v04.json) 与 [短基准](evidence/benchmark-foreground-v04.json)。此结果证明该起点可恢复，不证明旧失败位置可恢复，也不满足前后台长稳门槛；窗口焦点由用户报告，工具未独立测量。
+
 ## M0 第三切片：最终包与 GPU 依赖（2026-09-10）
 
 最终 0.4 包已重载，五类异常 marker（含超大 schema 数值）均被安全拒绝且原始 marker 恢复。新增只读运行/内存采样和 CPU/CUDA 依赖 smoke，17 项离线测试通过。

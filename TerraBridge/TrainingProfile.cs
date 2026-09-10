@@ -8,6 +8,7 @@ namespace TerraBridge;
 public sealed partial class TerraBridge
 {
     private bool trainingAllowed;
+    private bool backgroundRequested;
     private string profileId, trainingReason = "not_checked";
     private string worldSession = Guid.NewGuid().ToString("N");
     private readonly string instanceId = Guid.NewGuid().ToString("N");
@@ -28,7 +29,7 @@ public sealed partial class TerraBridge
     // Game thread only. A marker does not authorize cloud/outside saves.
     internal void RefreshTrainingProfile()
     {
-        bool allowed = false;
+        bool allowed = false, background = false;
         string id = null, reason = "training_profile_required";
         try {
             string root = Path.GetFullPath(Main.SavePath);
@@ -41,6 +42,7 @@ public sealed partial class TerraBridge
                     string.Equals(Path.GetFullPath(data.GetProperty("saveRoot").GetString()), root, StringComparison.OrdinalIgnoreCase) &&
                     Guid.TryParse(data.GetProperty("profileId").GetString(), out Guid parsed)) {
                     id = parsed.ToString("D");
+                    background = data.TryGetProperty("runInBackground", out var flag) && flag.ValueKind == JsonValueKind.True;
                     var playerFile = Main.ActivePlayerFileData;
                     var worldFile = Main.ActiveWorldFileData;
                     allowed = Main.netMode == 0 && playerFile != null && worldFile != null &&
@@ -59,6 +61,7 @@ public sealed partial class TerraBridge
         }
         lock (actionLock) {
             trainingAllowed = allowed;
+            backgroundRequested = allowed && background;
             profileId = id;
             trainingReason = reason;
             if (!allowed) checkpoint = null;

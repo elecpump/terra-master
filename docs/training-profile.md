@@ -27,7 +27,7 @@
 .\.venv\Scripts\python.exe verify_training_gate.py --profile profiles/training-m0/terramaster-training.json --output runs/m0-v04/gate.json
 ```
 
-这些命令会接管输入或恢复玩家检查点，运行时使用独立训练实例和单一客户端。主动基准仅发送 idle 动作，轮换 1/6/15 帧，最后一次 reset 核验位置、生命、魔力、朝向与零速度。报告包括完成快照、执行帧数、端到端吞吐、动作分组延迟和 reset 时间。网络耗时与预检会让实际吞吐低于理论值；世界在请求间持续运行。
+这些命令会接管输入或恢复玩家检查点，运行时使用独立训练实例和单一客户端。主动基准先 checkpoint 并立即 reset，核验位置、生命、魔力、朝向与零速度；通过后才轮换 1/6/15 帧 idle 动作，最后再次 reset 核验。报告 schema 2 的 `preflightReset` 单独保存试恢复结果，`resets` 保存末尾恢复；`preflightSeconds` 记录初始检查耗时。报告包括完成快照、执行帧数、端到端吞吐、动作分组延迟和末尾 reset 时间。总计时从首次预检前开始，包含 checkpoint 和两次 reset；旧 schema 1 报告不重算，不能直接作为同口径速度对比。世界在请求间持续运行。
 
 `--budget` 限制后续操作的提交，正在执行的操作有 5 秒服务端截止时间；单次 socket 最多等待 3 秒，客户端轮询截止为 6 秒，因此退出可能略晚于预算。超预算结果标为失败。失败不重放动作，也不使用全局 stop 取消可能属于其他客户端的新动作；已有 protocol 1 不能提供完整会话隔离或定向取消，留待 M1。
 

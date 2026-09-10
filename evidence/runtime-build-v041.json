@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "capturedAt": "2026-09-10T15:31:54.8464088Z",
+  "capturedAt": "2026-09-10T15:26:19.8809308Z",
   "terrariaVersion": "1.4.4.9",
   "tmodloaderProductVersion": "1.4.4.9+2026.07.3.0|2026.07|stable|Stable|666f69962d3bdffde54fc14025f02634965b4e7c|5250924198908260370",
   "bundledRuntimes": [
@@ -30,7 +30,7 @@
       "bytes": 21875712
     },
     "bridge_package": {
-      "path": "D:\\code\\terra-master\\profiles\\training-m0\\Mods\\TerraBridge.tmod",
+      "path": "D:\\code\\terra-master\\profiles\\build-check\\Mods\\TerraBridge.tmod",
       "sha256": "f9e63aa6cb24c2fb57b30d70c7dc922042710a41e48af50bc5b02f0fb858c15d",
       "bytes": 27378
     }

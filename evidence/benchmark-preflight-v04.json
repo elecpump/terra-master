@@ -1,0 +1,15 @@
+{
+  "schema": 2,
+  "mode": "steps",
+  "status": "failed",
+  "steps": [],
+  "resets": [],
+  "budgetSeconds": 10.0,
+  "requestedSteps": 3,
+  "timeMode": "realtime",
+  "resetScope": "player_checkpoint",
+  "action": "idle",
+  "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+  "error": "Player dead; no valid benchmark transition",
+  "generatedAt": "2026-09-10T15:12:23.153978+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "attempts": [
+    {
+      "runtime": {
+        "protocol": 1,
+        "status": "ok",
+        "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "sampledAtUnixMs": 1789055054199,
+        "focused": true,
+        "paused": false,
+        "menu": false,
+        "autoPause": true,
+        "backgroundHookInstalled": true,
+        "backgroundEnabled": true,
+        "checkpointAvailable": false,
+        "currentPositionBlocker": "location_solid_collision",
+        "checkpointBlocker": null
+      },
+      "before": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 44873,
+        "sampledAtUnixMs": 1789055054216,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33479.402,
+          "y": 3565.4023,
+          "velocityX": -1.4603138e-06,
+          "velocityY": 0,
+          "life": 83,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": -1
+        }
+      },
+      "result": {
+        "protocol": 1,
+        "status": "checkpoint_location_solid_collision",
+        "operationId": 11,
+        "executedFrames": 0,
+        "requestWallSeconds": 0.03115929999967193
+      }
+    }
+  ],
+  "resetRejected": "Unexpected bridge response: {'protocol': 1, 'error': 'Record checkpoint first'}"
+}

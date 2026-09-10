@@ -26,6 +26,14 @@ public sealed partial class TerraBridge
     private string completedResult;
     private static string Error(string message) => JsonSerializer.Serialize(new { protocol = 1, error = message });
 
+    private static string RestoreBlocker(Player p, Vector2 position)
+    {
+        if (p.mount.Active) return "player_mounted";
+        if (p.grapCount > 0) return "player_grappling";
+        if (Collision.SolidCollision(position, p.width, p.height)) return "location_solid_collision";
+        return null;
+    }
+
     private void CancelOperation(string reason)
     {
         if (operation == null) return;
@@ -81,21 +89,25 @@ public sealed partial class TerraBridge
         lock (actionLock) {
             ExpireOperation();
             if (operation == null) return;
+            if (operation.Kind == "checkpoint") checkpoint = null;
             if (p.dead) { CancelOperation("player_unavailable"); return; }
             if (operation.Kind != "step") {
                 RefreshTrainingProfile();
                 if (!trainingAllowed) { CancelOperation("training_profile_required"); return; }
             }
             if (operation.Kind == "checkpoint") {
-                if (p.mount.Active || p.grapCount > 0 || p.velocity != Vector2.Zero) {
-                    CancelOperation("stand_still_unmounted_first"); return;
+                // Failed replacement must not leave an older checkpoint usable.
+                string blocker = RestoreBlocker(p, p.position);
+                if (blocker != null) { CancelOperation("checkpoint_" + blocker); return; }
+                if (p.velocity != Vector2.Zero) {
+                    CancelOperation("checkpoint_player_moving"); return;
                 }
                 checkpoint = new Checkpoint { Position = p.position, Life = p.statLife, Mana = p.statMana, Direction = p.direction };
                 operation.Ready = true;
             } else if (operation.Kind == "reset") {
-                if (p.mount.Active || p.grapCount > 0 || Collision.SolidCollision(checkpoint.Position, p.width, p.height)) {
-                    CancelOperation("reset_location_or_player_blocked"); return;
-                }
+                if (checkpoint == null) { CancelOperation("checkpoint_unavailable"); return; }
+                string blocker = RestoreBlocker(p, checkpoint.Position);
+                if (blocker != null) { CancelOperation("reset_" + blocker); return; }
                 p.Teleport(checkpoint.Position);
                 p.velocity = Vector2.Zero;
                 p.statLife = Math.Min(checkpoint.Life, p.statLifeMax2);

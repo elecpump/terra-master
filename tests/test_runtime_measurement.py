@@ -39,6 +39,37 @@ class RuntimeMeasurementTests(unittest.TestCase):
         self.assertEqual(len(cases), 5)
         self.assertIn(str(2**80), cases["oversized_schema"])
 
+    def test_focus_requires_fresh_matching_runtime_samples(self):
+        samples = [row(1, 0), row(121, 2)]
+        for index, sample in enumerate(samples):
+            sample.update(osFocused=index == 0, runtimeAgeMs=5, runtime={"status": "ok", "instanceId": "one",
+                          "worldSession": "world", "focused": index == 0})
+        result = summarize(samples, 2)
+        self.assertTrue(result["focusVerified"])
+        self.assertEqual(result["focusedSamples"], 1)
+        self.assertEqual(result["unfocusedSamples"], 1)
+        for change in (lambda s: s.update(runtimeAgeMs=501),
+                       lambda s: s["runtime"].update(instanceId="other"),
+                       lambda s: s["runtime"].update(worldSession="other"),
+                       lambda s: s["runtime"].update(focused="false")):
+            bad = copy.deepcopy(samples)
+            change(bad[-1])
+            result = summarize(bad, 2)
+            self.assertIsNone(result["engineFocusMismatchSamples"])
+            self.assertEqual(result["status"], "not_ready")
+
+    def test_engine_focus_is_not_os_focus(self):
+        samples = [row(1, 0), row(121, 2)]
+        for sample in samples:
+            sample.update(osFocused=False, runtimeAgeMs=5, runtime={"status": "ok", "instanceId": "one",
+                          "worldSession": "world", "focused": True})
+        result = summarize(samples, 2)
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["unfocusedSamples"], 2)
+        self.assertEqual(result["engineFocusMismatchSamples"], 2)
+        del samples[0]["osFocused"]
+        self.assertFalse(summarize(samples, 2)["focusVerified"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,4 +1,4 @@
-"""Bounded, single-client step/reset benchmark for verified TerraBridge 0.4 training saves."""
+"""Bounded, single-client step/reset benchmark for verified TerraBridge 0.4/0.4.1 training saves."""
 import argparse
 from datetime import datetime, timezone
 import json
@@ -34,8 +34,8 @@ class Benchmark:
     def preflight(self, fresh=True):
         ping = self.send("ping", self.port)
         if (ping.get("protocol") != 1 or ping.get("bridge") != "TerraBridge" or
-                ping.get("version") != "0.4" or ping.get("status") != "ok" or not ping.get("instanceId")):
-            raise ValueError("Requires TerraBridge 0.4 / protocol 1")
+                ping.get("version") not in ("0.4", "0.4.1") or ping.get("status") != "ok" or not ping.get("instanceId")):
+            raise ValueError("Requires TerraBridge 0.4/0.4.1 / protocol 1")
         if self.instance_id and ping["instanceId"] != self.instance_id:
             raise ValueError("Bridge restarted")
         state = self.send("observe", self.port)
@@ -71,31 +71,44 @@ def completed(result, kind, frames=0):
         raise ValueError(f"Invalid {kind} result: {result}")
 
 
+def restored(result, baseline):
+    completed(result, "reset")
+    player = result["observation"]["player"]
+    if (any(player[key] != baseline[key] for key in ("x", "y", "life", "mana", "direction")) or
+            player["velocityX"] != 0 or player["velocityY"] != 0):
+        raise ValueError("Player checkpoint restoration mismatch")
+
+
 def run_benchmark(client, report, steps=30, budget=30):
+    started = time.perf_counter()
+    def check_budget():
+        if time.perf_counter() - started >= budget:
+            raise TimeoutError("Benchmark wall-clock budget exhausted")
+
     state = client.preflight()
     if state["player"]["velocityX"] != 0 or state["player"]["velocityY"] != 0:
         raise ValueError("Stand still before checkpoint")
+    check_budget()
     checkpoint = client.run("checkpoint")
-    completed(checkpoint, "checkpoint")
     report["checkpoint"] = checkpoint
+    completed(checkpoint, "checkpoint")
     baseline = checkpoint["observation"]["player"]
-    started = time.perf_counter()
+    # Protocol 1 can accept a checkpoint that SolidCollision later rejects.
+    # Verify the actual restore path before collecting any transitions.
+    check_budget()
+    report["preflightReset"] = client.run("reset")
+    restored(report["preflightReset"], baseline)
+    report["preflightSeconds"] = time.perf_counter() - started
     for index in range(steps):
-        if time.perf_counter() - started >= budget:
-            raise TimeoutError("Benchmark wall-clock budget exhausted")
+        check_budget()
         frames = (1, 6, 15)[index % 3]
         result = client.run(f"step idle {frames}")
         report["steps"].append({"requestedFrames": frames, "result": result})
         completed(result, "step", frames)
-    if time.perf_counter() - started >= budget:
-        raise TimeoutError("Benchmark wall-clock budget exhausted before reset")
+    check_budget()
     reset = client.run("reset")
     report["resets"].append(reset)
-    completed(reset, "reset")
-    player = reset["observation"]["player"]
-    if (any(player[key] != baseline[key] for key in ("x", "y", "life", "mana", "direction")) or
-            player["velocityX"] != 0 or player["velocityY"] != 0):
-        raise ValueError("Player checkpoint restoration mismatch")
+    restored(reset, baseline)
     elapsed = time.perf_counter() - started
     if elapsed > budget:
         raise TimeoutError("Benchmark completed after wall-clock budget")
@@ -141,7 +154,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if not (1 <= args.steps <= 300 and 1 <= args.budget <= 120 and 1 <= args.port <= 65535):
         parser.error("steps 1..300, budget 1..120 seconds, port 1..65535")
-    report = {"schema": 1, "mode": args.mode, "status": "failed", "steps": [], "resets": [],
+    report = {"schema": 2, "mode": args.mode, "status": "failed", "steps": [], "resets": [],
               "budgetSeconds": args.budget, "requestedSteps": args.steps,
               "timeMode": "realtime", "resetScope": "player_checkpoint", "action": "idle"}
     try:

@@ -21,7 +21,7 @@ def request(command="observe", port=17655):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["ping", "observe", "watch", "act", "stop"], default="observe", nargs="?")
+    parser.add_argument("command", choices=["ping", "observe", "runtime", "watch", "act", "stop"], default="observe", nargs="?")
     parser.add_argument("action", choices=["left", "right", "jump", "left_jump", "right_jump"], nargs="?")
     parser.add_argument("--ms", type=int, default=250)
     parser.add_argument("--port", type=int, default=17655)

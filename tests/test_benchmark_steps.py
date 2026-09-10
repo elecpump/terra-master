@@ -41,6 +41,21 @@ class FakeBridge:
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_patch_version_allowed_but_unknown_versions_rejected(self):
+        for version in ("0.4.1", "0.5", "0.4.99"):
+            bridge = FakeBridge()
+            def send(command, port):
+                result = bridge(command, port)
+                if command == "ping":
+                    result["version"] = version
+                return result
+            client = Benchmark("profile", send=send)
+            if version == "0.4.1":
+                client.preflight()
+            else:
+                with self.assertRaises(ValueError):
+                    client.preflight()
+
     def test_full_benchmark_and_frame_accounting(self):
         bridge = FakeBridge()
         report = {"steps": [], "resets": []}
@@ -49,6 +64,51 @@ class BenchmarkTests(unittest.TestCase):
         self.assertEqual(report["executedFrames"], 22)
         self.assertEqual([c for c in bridge.calls if c.startswith("step")], ["step idle 1", "step idle 6", "step idle 15"])
         self.assertEqual(len(report["resets"]), 1)
+        self.assertEqual(report["preflightReset"]["status"], "completed")
+        mutations = [c for c in bridge.calls if c in ("checkpoint", "reset") or c.startswith("step")]
+        self.assertEqual(mutations, ["checkpoint", "reset", "step idle 1", "step idle 6", "step idle 15", "reset"])
+
+    def test_unrestorable_checkpoint_stops_before_sampling(self):
+        bridge = FakeBridge()
+        def send(command, port):
+            response = bridge(command, port)
+            if command.startswith("result") and response["kind"] == "reset":
+                return {"operationId": response["operationId"], "status": "reset_location_or_player_blocked",
+                        "executedFrames": 0}
+            return response
+        report = {"steps": [], "resets": []}
+        with self.assertRaisesRegex(ValueError, "reset_location_or_player_blocked"):
+            run_benchmark(Benchmark("profile", send=send), report, steps=3)
+        self.assertEqual(report["preflightReset"]["status"], "reset_location_or_player_blocked")
+        self.assertFalse(any(c.startswith("step") for c in bridge.calls))
+        self.assertNotIn("transitionsPerSecondIncludingPreflightAndReset", report)
+
+    def test_preflight_restore_mismatch_stops_before_sampling(self):
+        bridge = FakeBridge()
+        def send(command, port):
+            response = bridge(command, port)
+            if command.startswith("result") and response["kind"] == "reset":
+                response["observation"]["player"]["x"] += 1
+            return response
+        report = {"steps": [], "resets": []}
+        with self.assertRaisesRegex(ValueError, "restoration mismatch"):
+            run_benchmark(Benchmark("profile", send=send), report, steps=3)
+        self.assertFalse(any(c.startswith("step") for c in bridge.calls))
+
+    def test_preflight_time_counts_against_budget(self):
+        bridge = FakeBridge()
+        now = [0.0]
+        def send(command, port):
+            response = bridge(command, port)
+            if command.startswith("result") and response["kind"] == "reset":
+                now[0] = 2.0
+            return response
+        report = {"steps": [], "resets": []}
+        with patch("benchmark_steps.time.perf_counter", side_effect=lambda: now[0]):
+            with self.assertRaises(TimeoutError):
+                run_benchmark(Benchmark("profile", send=send), report, steps=3, budget=1)
+        self.assertEqual(report["preflightSeconds"], 2.0)
+        self.assertFalse(any(c.startswith("step") for c in bridge.calls))
 
     def test_ordinary_world_never_receives_mutation(self):
         bridge = FakeBridge()

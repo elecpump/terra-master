@@ -29,6 +29,7 @@ public sealed partial class TerraBridge : Mod
             CancelOperation("world_changed");
             checkpoint = null;
             trainingAllowed = false;
+            backgroundRequested = false;
             profileId = null;
             trainingReason = "world_changed";
             worldSession = Guid.NewGuid().ToString("N");
@@ -42,10 +43,11 @@ public sealed partial class TerraBridge : Mod
     private string Handle(string command)
     {
         if (command == "ping") return JsonSerializer.Serialize(new {
-            protocol = 1, status = "ok", bridge = "TerraBridge", version = "0.4",
+            protocol = 1, status = "ok", bridge = "TerraBridge", version = "0.4.1",
             instanceId, processId = Environment.ProcessId, timeMode = "realtime", observationSchema = 2
         });
         if (command == "observe") return Volatile.Read(ref snapshot);
+        if (command == "runtime") return Volatile.Read(ref runtimeSnapshot);
         string training = HandleTraining(command);
         if (training != null) return training;
         string[] parts = command.Split(' ', StringSplitOptions.RemoveEmptyEntries);
@@ -110,6 +112,7 @@ public sealed partial class TerraBridge : Mod
     {
         if (Main.dedServ) return;
         Instance = this;
+        InstallBackgroundHook();
         stopping = false;
         try {
             listener = new TcpListener(IPAddress.Loopback, 17655);
@@ -159,6 +162,7 @@ public sealed partial class TerraBridge : Mod
     public override void Unload()
     {
         stopping = true;
+        RemoveBackgroundHook();
         ResetControl(false);
         listener?.Stop();
         worker?.Join(2000);

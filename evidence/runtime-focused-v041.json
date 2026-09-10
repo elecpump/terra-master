@@ -1,0 +1,253 @@
+{
+  "status": "ok",
+  "requestedSeconds": 3,
+  "samples": [
+    {
+      "elapsedSeconds": 0.003147700000226905,
+      "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+      "sampleAgeMs": 8.863037109375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 1173,
+        "sampledAtUnixMs": 1789054325868,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "runtime": {
+        "protocol": 1,
+        "status": "ok",
+        "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "sampledAtUnixMs": 1789054325877,
+        "focused": true,
+        "paused": false,
+        "menu": false,
+        "autoPause": true,
+        "backgroundHookInstalled": true,
+        "backgroundEnabled": true,
+        "checkpointAvailable": true,
+        "currentPositionBlocker": null,
+        "checkpointBlocker": null
+      },
+      "runtimeAgeMs": 0.36328125,
+      "memory": {
+        "workingSetBytes": 960569344,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 20760,
+        "privateBytes": 1764532224,
+        "startedAt": "2026-09-10T15:30:35.0383673Z"
+      }
+    },
+    {
+      "elapsedSeconds": 1.190697099999852,
+      "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+      "sampleAgeMs": 13.71728515625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 1244,
+        "sampledAtUnixMs": 1789054327051,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "runtime": {
+        "protocol": 1,
+        "status": "ok",
+        "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "sampledAtUnixMs": 1789054327080,
+        "focused": true,
+        "paused": false,
+        "menu": false,
+        "autoPause": true,
+        "backgroundHookInstalled": true,
+        "backgroundEnabled": true,
+        "checkpointAvailable": true,
+        "currentPositionBlocker": null,
+        "checkpointBlocker": null
+      },
+      "runtimeAgeMs": -0.268798828125
+    },
+    {
+      "elapsedSeconds": 2.2324485999997705,
+      "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+      "sampleAgeMs": 5.303955078125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 1307,
+        "sampledAtUnixMs": 1789054328101,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "runtime": {
+        "protocol": 1,
+        "status": "ok",
+        "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "sampledAtUnixMs": 1789054328121,
+        "focused": true,
+        "paused": false,
+        "menu": false,
+        "autoPause": true,
+        "backgroundHookInstalled": true,
+        "backgroundEnabled": true,
+        "checkpointAvailable": true,
+        "currentPositionBlocker": null,
+        "checkpointBlocker": null
+      },
+      "runtimeAgeMs": 0.811279296875
+    },
+    {
+      "elapsedSeconds": 3.04031489999943,
+      "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+      "sampleAgeMs": 13.0927734375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 1355,
+        "sampledAtUnixMs": 1789054328901,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "runtime": {
+        "protocol": 1,
+        "status": "ok",
+        "instanceId": "aeebe8a4aa5c41878aa0803281a6a47f",
+        "worldSession": "94d2037c1fc44759a60da98e832037de",
+        "sampledAtUnixMs": 1789054328929,
+        "focused": true,
+        "paused": false,
+        "menu": false,
+        "autoPause": true,
+        "backgroundHookInstalled": true,
+        "backgroundEnabled": true,
+        "checkpointAvailable": true,
+        "currentPositionBlocker": null,
+        "checkpointBlocker": null
+      },
+      "runtimeAgeMs": 0.631591796875
+    }
+  ],
+  "issues": [],
+  "sampleCount": 4,
+  "elapsedSeconds": 3.04031489999943,
+  "deadSamples": 0,
+  "peakWorkingSetBytes": 960569344,
+  "peakPrivateBytes": 1764532224,
+  "focusVerified": true,
+  "focusedSamples": 4,
+  "unfocusedSamples": 0,
+  "trainingReady": false,
+  "limitation": "Read-only runtime continuity, not action/reset or foreground/background certification. Death samples are reported separately.",
+  "generatedAt": "2026-09-10T15:32:08.929631+00:00"
+}
