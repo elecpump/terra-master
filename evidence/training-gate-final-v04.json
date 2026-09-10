@@ -1,0 +1,456 @@
+{
+  "status": "ok",
+  "before": {
+    "protocol": 1,
+    "status": "in_world",
+    "tick": 4097,
+    "sampledAtUnixMs": 1789050696933,
+    "control": {
+      "actionId": 0,
+      "appliedId": 0,
+      "appliedFrames": 0,
+      "action": "stop",
+      "active": false
+    },
+    "training": {
+      "allowed": true,
+      "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+      "reason": "verified_local_training_saves"
+    },
+    "worldSession": "d463f4b680ca4524826e7c6e73956090",
+    "world": {
+      "id": 1655013004,
+      "widthTiles": 4200,
+      "heightTiles": 1200
+    },
+    "player": {
+      "x": 33571.31,
+      "y": 3574,
+      "velocityX": 0,
+      "velocityY": 0,
+      "life": 64,
+      "maxLife": 100,
+      "mana": 20,
+      "dead": false,
+      "direction": 1
+    }
+  },
+  "cases": {
+    "disabled_purpose": {
+      "rejections": {
+        "checkpoint": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}",
+        "reset": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}"
+      },
+      "disabled": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4143,
+        "sampledAtUnixMs": 1789050697699,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": false,
+          "profileId": null,
+          "reason": "training_profile_required"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 64,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "restored": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4201,
+        "sampledAtUnixMs": 1789050698666,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 64,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    "broken_json": {
+      "rejections": {
+        "checkpoint": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}",
+        "reset": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}"
+      },
+      "disabled": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4261,
+        "sampledAtUnixMs": 1789050699666,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": false,
+          "profileId": null,
+          "reason": "invalid_training_profile"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 65,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "restored": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4320,
+        "sampledAtUnixMs": 1789050700649,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 65,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    "oversized_schema": {
+      "rejections": {
+        "checkpoint": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}",
+        "reset": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}"
+      },
+      "disabled": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4386,
+        "sampledAtUnixMs": 1789050701749,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": false,
+          "profileId": null,
+          "reason": "invalid_training_profile"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 66,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "restored": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4442,
+        "sampledAtUnixMs": 1789050702682,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 66,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    "missing_id": {
+      "rejections": {
+        "checkpoint": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}",
+        "reset": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}"
+      },
+      "disabled": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4504,
+        "sampledAtUnixMs": 1789050703716,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": false,
+          "profileId": null,
+          "reason": "invalid_training_profile"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 67,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "restored": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4567,
+        "sampledAtUnixMs": 1789050704766,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 67,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    "wrong_root": {
+      "rejections": {
+        "checkpoint": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}",
+        "reset": "Unexpected bridge response: {'protocol': 1, 'error': 'training_profile_required'}"
+      },
+      "disabled": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4622,
+        "sampledAtUnixMs": 1789050705682,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": false,
+          "profileId": null,
+          "reason": "training_profile_required"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 68,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "restored": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 4684,
+        "sampledAtUnixMs": 1789050706716,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33571.31,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 68,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    }
+  },
+  "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+  "restored": {
+    "protocol": 1,
+    "status": "in_world",
+    "tick": 4687,
+    "sampledAtUnixMs": 1789050706766,
+    "control": {
+      "actionId": 0,
+      "appliedId": 0,
+      "appliedFrames": 0,
+      "action": "stop",
+      "active": false
+    },
+    "training": {
+      "allowed": true,
+      "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+      "reason": "verified_local_training_saves"
+    },
+    "worldSession": "d463f4b680ca4524826e7c6e73956090",
+    "world": {
+      "id": 1655013004,
+      "widthTiles": 4200,
+      "heightTiles": 1200
+    },
+    "player": {
+      "x": 33571.31,
+      "y": 3574,
+      "velocityX": 0,
+      "velocityY": 0,
+      "life": 68,
+      "maxLife": 100,
+      "mana": 20,
+      "dead": false,
+      "direction": 1
+    }
+  }
+}

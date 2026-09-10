@@ -21,7 +21,7 @@
 
 ## 2. 现状与关键缺口
 
-2026-09-10 更新：桥接 0.4 增加独立训练目录与 checkpoint/reset 门禁、实例/世界会话标识，主动基准和暂停恢复验收已通过。仍无完整场景、合法死亡 transition 或同步推进；最终损坏 marker 异常分支待重载验证。详见 [m0-active-report.md](m0-active-report.md)，下表原型 0.3 证据仍保留。
+2026-09-10 更新：桥接 0.4 增加独立训练目录与 checkpoint/reset 门禁、实例/世界会话标识，主动基准和暂停恢复验收已通过。仍无完整场景、合法死亡 transition 或同步推进；最终损坏 marker 异常分支已重载验证，GPU 依赖兼容 smoke 和内存采样已完成；30 分钟前后台稳定性仍未通过，见 [m0-final-report.md](m0-final-report.md)。详见 [m0-active-report.md](m0-active-report.md)，下表原型 0.3 证据仍保留。
 
 | 项目 | 当前证据 | 对后续的影响 |
 |---|---|---|

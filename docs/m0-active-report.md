@@ -2,6 +2,8 @@
 
 日期：2026-09-10。范围：独立存档、桥接 0.4 训练门禁、主动基准、暂停与恢复。
 
+后续状态：本文保留第二切片历史记录；最终包重载、异常 marker 与 GPU 依赖 smoke 已在 [第三切片](m0-final-report.md)完成，剩余门槛以该报告为准。
+
 ## 实现
 
 `training_profile.py` 新建项目内 profile 和训练 marker；`start_training.ps1` 调用安装版 launcher，使用已核对的 `-tmlsavedirectory` 参数。新角色与世界位于 `profiles/training-m0/Players`、`Worlds`，均由游戏正常创建，没有复制或编辑普通存档。launcher 记录不授予脚本对其他进程的管理权限。

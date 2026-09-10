@@ -1,0 +1,2418 @@
+{
+  "status": "ok",
+  "requestedSeconds": 60,
+  "samples": [
+    {
+      "elapsedSeconds": 0.01686119999976654,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 11.651611328125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12345,
+        "sampledAtUnixMs": 1789050834399,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      },
+      "memory": {
+        "workingSetBytes": 910708736,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 16872,
+        "privateBytes": 1886400512,
+        "startedAt": "2026-09-10T14:15:35.0850722Z"
+      }
+    },
+    {
+      "elapsedSeconds": 1.2155947999999626,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 10.5048828125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12417,
+        "sampledAtUnixMs": 1789050835599,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.240378999999848,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 1.99267578125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12479,
+        "sampledAtUnixMs": 1789050836632,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.281206899999688,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 9.009521484375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12541,
+        "sampledAtUnixMs": 1789050837666,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 4.322045899999921,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 16.6943359375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12603,
+        "sampledAtUnixMs": 1789050838699,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 5.324655999999777,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 2.31982421875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12664,
+        "sampledAtUnixMs": 1789050839716,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 6.358387199999925,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 3.121826171875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12726,
+        "sampledAtUnixMs": 1789050840749,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 7.40054949999967,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 11.94287109375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12788,
+        "sampledAtUnixMs": 1789050841782,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 8.442294999999831,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 4.10498046875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12851,
+        "sampledAtUnixMs": 1789050842832,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33144.508,
+          "y": 3554.5,
+          "velocityX": -4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 9.468551599999955,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 13.2265625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12912,
+        "sampledAtUnixMs": 1789050843849,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "memory": {
+        "workingSetBytes": 902541312,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 16872,
+        "privateBytes": 1876566016,
+        "startedAt": "2026-09-10T14:15:35.0850722Z"
+      }
+    },
+    {
+      "elapsedSeconds": 10.651466899999832,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 12.22607421875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 12983,
+        "sampledAtUnixMs": 1789050845033,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 11.67853839999998,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 6.043212890625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13045,
+        "sampledAtUnixMs": 1789050846066,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 12.720456499999727,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 15.247314453125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13107,
+        "sampledAtUnixMs": 1789050847099,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33480.6,
+          "y": 3566.6016,
+          "velocityX": -0.80000144,
+          "velocityY": 0,
+          "life": 88,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 13.746238599999742,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 8.203369140625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13169,
+        "sampledAtUnixMs": 1789050848132,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33432.004,
+          "y": 3548.8022,
+          "velocityX": -3.400001,
+          "velocityY": 0.9000002,
+          "life": 75,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 14.788438799999767,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 15.822998046875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13231,
+        "sampledAtUnixMs": 1789050849166,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 75,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 15.827001099999961,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 4.9716796875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13294,
+        "sampledAtUnixMs": 1789050850216,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33308.906,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 65,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 16.866022899999734,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 10.619384765625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13356,
+        "sampledAtUnixMs": 1789050851249,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33308.906,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 65,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 17.890502899999774,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 0.994140625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13418,
+        "sampledAtUnixMs": 1789050852283,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33308.906,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 65,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 18.91738209999994,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 12.25439453125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13479,
+        "sampledAtUnixMs": 1789050853299,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33222.31,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 53,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 19.95782989999998,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 2.310546875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13542,
+        "sampledAtUnixMs": 1789050854349,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33136.91,
+          "y": 3558,
+          "velocityX": -0.80000144,
+          "velocityY": 0,
+          "life": 40,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "memory": {
+        "workingSetBytes": 902619136,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 16872,
+        "privateBytes": 1876971520,
+        "startedAt": "2026-09-10T14:15:35.0850722Z"
+      }
+    },
+    {
+      "elapsedSeconds": 21.140725700000075,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 2.6162109375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13613,
+        "sampledAtUnixMs": 1789050855532,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33222.11,
+          "y": 3558,
+          "velocityX": 0.40000147,
+          "velocityY": 0,
+          "life": 29,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 22.166223799999898,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 10.900634765625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13674,
+        "sampledAtUnixMs": 1789050856549,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33273.008,
+          "y": 3543.7,
+          "velocityX": 3.3000011,
+          "velocityY": 1.3000002,
+          "life": 18,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 23.206622400000015,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 1.2099609375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13737,
+        "sampledAtUnixMs": 1789050857599,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33308.906,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 18,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 24.229758299999958,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 7.499755859375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13798,
+        "sampledAtUnixMs": 1789050858616,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 25.271215799999936,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 15.938232421875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13860,
+        "sampledAtUnixMs": 1789050859649,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 26.27228769999965,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 17.106201171875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13920,
+        "sampledAtUnixMs": 1789050860649,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 27.304995199999667,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 15.74560546875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 13982,
+        "sampledAtUnixMs": 1789050861683,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 28.346768200000042,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 7.344970703125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14045,
+        "sampledAtUnixMs": 1789050862733,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 29.34824690000005,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 58.7958984375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14102,
+        "sampledAtUnixMs": 1789050863683,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 30.382090799999787,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 7.72021484375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14165,
+        "sampledAtUnixMs": 1789050864768,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "memory": {
+        "workingSetBytes": 903041024,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 16872,
+        "privateBytes": 1877377024,
+        "startedAt": "2026-09-10T14:15:35.0850722Z"
+      }
+    },
+    {
+      "elapsedSeconds": 31.57607139999982,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 1.7861328125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14237,
+        "sampledAtUnixMs": 1789050865968,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 32.617120800000066,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 8.853515625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14299,
+        "sampledAtUnixMs": 1789050867002,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 33.64509939999971,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 3.72607421875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14361,
+        "sampledAtUnixMs": 1789050868035,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 5,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 34.68603209999992,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 11.80908203125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14423,
+        "sampledAtUnixMs": 1789050869068,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 6,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 35.7278753999999,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 3.393798828125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14486,
+        "sampledAtUnixMs": 1789050870118,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 6,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 36.767608799999834,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 9.400390625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14548,
+        "sampledAtUnixMs": 1789050871152,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 7,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 37.80794789999982,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 16.6123046875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14610,
+        "sampledAtUnixMs": 1789050872185,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 7,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 38.84812740000007,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 6.708251953125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14673,
+        "sampledAtUnixMs": 1789050873235,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 8,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 39.88878509999995,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 14.4560546875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14735,
+        "sampledAtUnixMs": 1789050874268,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 8,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 40.93016069999976,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 5.640625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14798,
+        "sampledAtUnixMs": 1789050875318,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 9,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      "memory": {
+        "workingSetBytes": 905687040,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 16872,
+        "privateBytes": 1879625728,
+        "startedAt": "2026-09-10T14:15:35.0850722Z"
+      }
+    },
+    {
+      "elapsedSeconds": 42.12626169999976,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 1.830322265625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14870,
+        "sampledAtUnixMs": 1789050876518,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 43.16728349999994,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 9.119873046875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14932,
+        "sampledAtUnixMs": 1789050877552,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 44.20774119999987,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 16.22412109375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 14994,
+        "sampledAtUnixMs": 1789050878585,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 45.24895489999972,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 7.892333984375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15057,
+        "sampledAtUnixMs": 1789050879635,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 46.29050079999979,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 15.0703125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15119,
+        "sampledAtUnixMs": 1789050880669,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 47.313130499999716,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 4.892578125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15181,
+        "sampledAtUnixMs": 1789050881702,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 48.3530424999999,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 11.840576171875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15243,
+        "sampledAtUnixMs": 1789050882735,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 49.39433119999967,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 3.091064453125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15306,
+        "sampledAtUnixMs": 1789050883785,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 50.42223539999986,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 13.72314453125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15367,
+        "sampledAtUnixMs": 1789050884802,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 51.462606199999755,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 4.322265625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15430,
+        "sampledAtUnixMs": 1789050885852,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33400.004,
+          "y": 3554.5,
+          "velocityX": 4.5,
+          "velocityY": -3.5,
+          "life": 0,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": true,
+          "direction": 1
+        }
+      },
+      "memory": {
+        "workingSetBytes": 908197888,
+        "path": "D:\\software\\Steam\\steamapps\\common\\tModLoader\\dotnet\\dotnet.exe",
+        "pid": 16872,
+        "privateBytes": 1882214400,
+        "startedAt": "2026-09-10T14:15:35.0850722Z"
+      }
+    },
+    {
+      "elapsedSeconds": 52.64409089999981,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 2.826904296875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15501,
+        "sampledAtUnixMs": 1789050887035,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 53.644759499999964,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 3.56591796875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15561,
+        "sampledAtUnixMs": 1789050888035,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 54.64584939999986,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 4.5517578125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15621,
+        "sampledAtUnixMs": 1789050889035,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 55.67838369999981,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 3.2685546875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15683,
+        "sampledAtUnixMs": 1789050890069,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33566,
+          "y": 3574,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 100,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 56.71683189999976,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 8.5146484375,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15745,
+        "sampledAtUnixMs": 1789050891102,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33480,
+          "y": 3566,
+          "velocityX": -0.60000145,
+          "velocityY": 0,
+          "life": 87,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 57.743292499999825,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 1.905517578125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15807,
+        "sampledAtUnixMs": 1789050892135,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33479.402,
+          "y": 3565.4023,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 87,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 58.78453659999968,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 10.040283203125,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15869,
+        "sampledAtUnixMs": 1789050893168,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33395.504,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 72,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 59.81063839999979,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 2.235107421875,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15931,
+        "sampledAtUnixMs": 1789050894202,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33308.906,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 80,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 60.01264689999971,
+      "instanceId": "d10875cce42e4de786a22f92e10d57a6",
+      "sampleAgeMs": 4.209228515625,
+      "observation": {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 15943,
+        "sampledAtUnixMs": 1789050894402,
+        "control": {
+          "actionId": 0,
+          "appliedId": 0,
+          "appliedFrames": 0,
+          "action": "stop",
+          "active": false
+        },
+        "training": {
+          "allowed": true,
+          "profileId": "effc3a5f-8f30-4d7f-9652-07cab7a3264b",
+          "reason": "verified_local_training_saves"
+        },
+        "worldSession": "d463f4b680ca4524826e7c6e73956090",
+        "world": {
+          "id": 1655013004,
+          "widthTiles": 4200,
+          "heightTiles": 1200
+        },
+        "player": {
+          "x": 33308.906,
+          "y": 3558,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 80,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    }
+  ],
+  "issues": [],
+  "sampleCount": 59,
+  "elapsedSeconds": 60.01264689999971,
+  "deadSamples": 19,
+  "peakWorkingSetBytes": 910708736,
+  "peakPrivateBytes": 1886400512,
+  "focusVerified": false,
+  "trainingReady": false,
+  "limitation": "Read-only runtime continuity, not action/reset or foreground/background certification. Death samples are reported separately.",
+  "generatedAt": "2026-09-10T14:34:54.406709+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "device": "cpu",
+  "environment": "CartPole-v1",
+  "seed": 42,
+  "steps": 256,
+  "python": "3.11.15",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "gymnasium": "1.2.3",
+    "stable-baselines3": "2.7.1",
+    "numpy": "2.2.6"
+  },
+  "cudaRuntime": "12.8",
+  "cudaAvailable": true,
+  "tensorDevice": "cpu",
+  "finiteBackward": true,
+  "policyDevice": "cpu",
+  "totalTimesteps": 256,
+  "saveLoadExact": true,
+  "modelSha256": "1811639f4022bb738337761d3d59dfc74a09c45749b7960c2e8272c4015a5fdc",
+  "elapsedSeconds": 2.09080719999929,
+  "generatedAt": "2026-09-10T14:43:07.509465+00:00"
+}

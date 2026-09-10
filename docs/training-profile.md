@@ -31,7 +31,7 @@
 
 `--budget` 限制后续操作的提交，正在执行的操作有 5 秒服务端截止时间；单次 socket 最多等待 3 秒，客户端轮询截止为 6 秒，因此退出可能略晚于预算。超预算结果标为失败。失败不重放动作，也不使用全局 stop 取消可能属于其他客户端的新动作；已有 protocol 1 不能提供完整会话隔离或定向取消，留待 M1。
 
-`verify_training_gate.py` 临时把 marker 的 purpose 改为无效值，确认 checkpoint/reset 均被服务器拒绝，再在 finally 恢复原始 marker。它不更改角色或世界文件。此测试覆盖无有效训练标记分支，不能替代云存档、路径重定向或损坏 marker 的全部实机测试。
+`verify_training_gate.py` 依次测试无效 purpose、破损 JSON、超出 Int32 范围的 schema、缺失 profileId、错误 saveRoot，确认 checkpoint/reset 均被服务器拒绝，每例恢复 marker 并重新验证可用性，最终在 finally 恢复原始字节。它不更改角色或世界文件。云存档和路径重定向仍未实机测试。
 
 ## 暂停与恢复
 
@@ -48,5 +48,13 @@
 ```powershell
 .\capture_runtime.ps1 -ModPath "$PWD\profiles\training-m0\Mods\TerraBridge.tmod"
 ```
+
+## 只读运行与内存采样
+
+```powershell
+.\.venv\Scripts\python.exe measure_runtime.py --seconds 60 --output runs/runtime-60s.json
+```
+
+采样 duration 范围 2–1800 秒；每秒读取 ping/observe，每十个样本读取已核对进程路径的工作集和 private bytes。记录实例重启、世界会话变化、帧号停滞/回退、陈旧快照及采样不足；死亡样本单独计数。该工具不发动作、不 reset、不管理进程，不会声称训练就绪。它没有观测实际前台窗口，因此即使持续 1800 秒通过也不能独自满足“30 分钟前后台稳定性”门槛。
 
 本阶段仍不提供完整世界 reset、死亡 terminated transition、PPO 训练、同步推进或多实例能力。独立存档不等于受控导航场景；自然生成世界仍会刷怪、演化和杀死角色。

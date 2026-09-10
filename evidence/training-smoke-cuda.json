@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "device": "cuda",
+  "environment": "CartPole-v1",
+  "seed": 42,
+  "steps": 256,
+  "python": "3.11.15",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "gymnasium": "1.2.3",
+    "stable-baselines3": "2.7.1",
+    "numpy": "2.2.6"
+  },
+  "cudaRuntime": "12.8",
+  "cudaAvailable": true,
+  "gpu": "NVIDIA GeForce RTX 5090 D v2",
+  "computeCapability": [
+    12,
+    0
+  ],
+  "compiledArchitectures": [
+    "sm_61",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "tensorDevice": "cuda:0",
+  "finiteBackward": true,
+  "policyDevice": "cuda:0",
+  "totalTimesteps": 256,
+  "saveLoadExact": true,
+  "modelSha256": "ae639c5bdf8a15eb0d21769bee614816c7bebfd2087f87050672741d2d64add4",
+  "peakAllocatedBytes": 18716160,
+  "elapsedSeconds": 2.4982614000000467,
+  "generatedAt": "2026-09-10T14:43:10.448637+00:00",
+  "driverVersion": "596.49",
+  "driverEvidence": "nvidia-smi query before installation"
+}

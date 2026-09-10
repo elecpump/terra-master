@@ -2,7 +2,15 @@
 
 项目设计入口：[完整架构](docs/ARCHITECTURE.md) · [执行计划](docs/EXECUTION_PLAN.md) · [项目上下文](docs/PROJECT_CONTEXT.md)。长期目标为自主探索与最终通关；以下内容记录当前已实现原型。
 
-目前实现本机 TCP 观测、短时动作控制、按帧计数的 step 与玩家检查点重置（TerraBridge 0.4，protocol 1）。0.4 增加隔离训练存档校验、实例/世界会话标识与主动性能验收；完整世界仍实时运行，尚未实现完整场景重置或训练算法。
+目前实现本机 TCP 观测、短时动作控制、按帧计数的 step 与玩家检查点重置（TerraBridge 0.4，protocol 1）。0.4 增加隔离训练存档校验、实例/世界会话标识与主动性能验收；完整世界仍实时运行，尚未实现完整场景重置或 Terraria 训练管线。
+
+## M0 第三切片：最终包与 GPU 依赖（2026-09-10）
+
+最终 0.4 包已重载，五类异常 marker（含超大 schema 数值）均被安全拒绝且原始 marker 恢复。新增只读运行/内存采样和 CPU/CUDA 依赖 smoke，17 项离线测试通过。
+
+项目 `.venv` 已使用 **PyTorch 2.8.0+cu128**，配合 Gymnasium 1.2.3、SB3 2.7.1。RTX 5090 D v2 实际 CUDA 运算、反向传播、256 步 CartPole PPO、模型保存加载均通过；完整版本锁为 [requirements-training-win-py311.lock](requirements-training-win-py311.lock)，复跑见 [smoke 指南](docs/dependency-smoke.md)。没有启动 Terraria 模型训练。
+
+60 秒采样的峰值工作集约 869 MiB，但含 19 个死亡样本；后续采样检测到停滞。最终包补做的三次 step 成功，reset 因位置/玩家状态检查被拒绝，整轮标为失败。30 分钟前后台稳定性与 D1 仍未完成。详见 [第三切片报告](docs/m0-final-report.md)。
 
 ## M0 第二切片：隔离存档与主动验收（2026-09-10）
 
@@ -16,7 +24,7 @@
 - 30 次混合 1/6/15 帧 idle 动作，合计精确执行 220 帧；含预检和一次 reset 共 5.091 秒，吞吐 5.89 transition/s。混合延迟 p50 116 ms / p95 280 ms；reset 30.8 ms。不是固定 6 帧策略的吞吐。
 - 控制、输入释放、1/6/15 帧移动与检查点恢复通过。撤销 marker 时 checkpoint/reset 均被服务器拒绝，恢复 marker 后重新允许。
 - 暂停时 idle 1 帧约 5 秒返回 timeout、执行 0 帧；恢复后旧超时结果不变，新 6 帧 step 完成。
-- 14 项离线测试通过。原始记录见 [第二切片报告](docs/m0-active-report.md)。最终补充的损坏 marker 数字格式异常处理已编译；实机记录来自补充前的 0.4 包，两个包哈希分别保留，尚未重载验证该异常分支。
+- 14 项离线测试通过。原始记录见 [第二切片报告](docs/m0-active-report.md)。最终补充的损坏 marker 数字格式异常处理已编译；实机记录来自补充前的 0.4 包，两个包哈希分别保留，当时尚未重载，该缺口已由第三切片闭环。
 
 M0 尚未完成 30 分钟前后台稳定性、内存测量与训练依赖 smoke；D1 同步实验尚未开始。训练目录中的自然世界仍会刷怪、造成伤害，隔离目录不等于可重复重置的训练场景。
 

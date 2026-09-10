@@ -1,4 +1,4 @@
-"""Reversibly disable this isolated profile's marker and verify reset is rejected."""
+"""Reversibly invalidate an isolated profile's marker and verify reset is rejected."""
 import argparse
 import json
 from pathlib import Path
@@ -6,6 +6,16 @@ import time
 
 from benchmark_steps import Benchmark
 from bridge_client import request
+
+
+def invalid_markers(marker):
+    return {
+        "disabled_purpose": json.dumps(dict(marker, purpose="gate-verification-disabled")),
+        "broken_json": "{",
+        "oversized_schema": json.dumps(dict(marker, schema=2**80)),
+        "missing_id": json.dumps({k: v for k, v in marker.items() if k != "profileId"}),
+        "wrong_root": json.dumps(dict(marker, saveRoot=str(Path(marker["saveRoot"]).parent))),
+    }
 
 
 def wait_allowed(expected, seconds=4):
@@ -31,20 +41,24 @@ def main():
         raise ValueError("Marker directory mismatch")
     client = Benchmark(marker["profileId"])
     before = client.preflight()
-    report = {"status": "failed", "before": before, "rejections": {}}
+    report = {"status": "failed", "before": before, "cases": {}, "instanceId": client.instance_id}
     try:
-        marker["purpose"] = "gate-verification-disabled"
-        marker_path.write_text(json.dumps(marker), encoding="utf-8")
-        report["disabled"] = wait_allowed(False)
-        for command in ("checkpoint", "reset"):
-            try:
-                request(command)
-            except ValueError as exc:
-                if "training_profile_required" not in str(exc):
-                    raise
-                report["rejections"][command] = str(exc)
-            else:
-                raise AssertionError(f"{command} unexpectedly accepted")
+        for name, content in invalid_markers(marker).items():
+            case = report["cases"][name] = {"rejections": {}}
+            marker_path.write_text(content, encoding="utf-8")
+            case["disabled"] = wait_allowed(False)
+            for command in ("checkpoint", "reset"):
+                try:
+                    request(command)
+                except ValueError as exc:
+                    if "training_profile_required" not in str(exc):
+                        raise
+                    case["rejections"][command] = str(exc)
+                else:
+                    raise AssertionError(f"{command} unexpectedly accepted")
+            marker_path.write_bytes(original)
+            case["restored"] = wait_allowed(True)
+            client.preflight()
     finally:
         marker_path.write_bytes(original)
         args.output.parent.mkdir(parents=True, exist_ok=True)
