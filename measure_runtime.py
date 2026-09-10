@@ -93,12 +93,14 @@ def main():
     parser.add_argument("--seconds", type=int, default=60)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, default=Path(__file__).parent / "runtime-manifest.json")
+    parser.add_argument("--progress-output", type=Path, help="Write a compact progress snapshot every 30 seconds")
     args = parser.parse_args()
     if not 2 <= args.seconds <= 1800:
         parser.error("seconds must be 2..1800")
     samples = []
     report = {"schema": 2, "status": "failed", "requestedSeconds": args.seconds, "samples": samples}
     started = time.perf_counter()
+    next_progress = 0
     try:
         manifest = json.loads(args.manifest.read_text(encoding="utf-8-sig"))
         expected_process = Path(manifest["artifacts"]["tmodloader"]["path"]).parent / "dotnet" / "dotnet.exe"
@@ -119,6 +121,12 @@ def main():
                 row["memory"] = process_memory(ping["processId"])
                 if Path(row["memory"]["path"]).resolve() != expected_process.resolve():
                     raise ValueError("Bridge PID executable does not match installed runtime")
+            if args.progress_output and row["elapsedSeconds"] >= next_progress:
+                progress = summarize(samples, 0)
+                progress.update(requestedSeconds=args.seconds, measurementComplete=False)
+                args.progress_output.parent.mkdir(parents=True, exist_ok=True)
+                args.progress_output.write_text(json.dumps(progress, indent=2) + "\n", encoding="utf-8")
+                next_progress = row["elapsedSeconds"] + 30
             if row["elapsedSeconds"] >= args.seconds:
                 break
             time.sleep(min(1, args.seconds - row["elapsedSeconds"]))
@@ -129,6 +137,8 @@ def main():
         report["generatedAt"] = datetime.now(timezone.utc).isoformat()
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        if args.progress_output:
+            args.progress_output.write_text(json.dumps({k: v for k, v in report.items() if k != "samples"}, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({k: v for k, v in report.items() if k != "samples"}, indent=2))
     return 0 if report["status"] == "ok" else 1
 

@@ -76,6 +76,8 @@ M0–M4 合计约 13–23 个工程日（含 D1 的 2 天），是首个导航�
 
 ## 3. M0：建立可重复的开发基线
 
+2026-09-11：0.4.3 的 30 分钟前后台运行连续性通过（后台 950 秒、前台 848 秒，59.998 tick/s），无停滞或会话变化；死亡状态 660 样本单独记录，训练就绪仍为 false。结合已有动作/reset、暂停恢复、隔离 profile 和 CPU/CUDA smoke，可进入 D1 实机时间盒；不把运行稳定性与 M2 的安全场景/死亡重置混同。证据见 [m0-stability-report.md](m0-stability-report.md)，静态准备见 [d1-loop-investigation.md](d1-loop-investigation.md)。
+
 2026-09-10 第三切片：T0.3 已锁定 GPU 训练依赖并通过 CPU/CUDA CartPole smoke；T0.5 已有只读进程内存采样；最终 0.4 包异常 marker 验收完成。60 秒内存在死亡样本、主动 reset 被拒绝、后续采样停滞，因此不判长稳通过。30 分钟门槛与 D1 尚未完成。见 [m0-final-report.md](m0-final-report.md)。
 
 2026-09-10 第二切片：T0.6 已在项目独立目录创建本地训练角色/世界并通过服务端门禁；T0.5 增加 30 次混合帧主动基准（5.89 transition/s），内存未测；T0.7 暂停零帧超时和恢复已实机通过。最新损坏 marker 异常分支只完成编译，待重载验证；30 分钟稳定性、训练依赖 smoke 与 D1 仍未完成。见 [m0-active-report.md](m0-active-report.md)。下面首个切片进展保留作历史记录。

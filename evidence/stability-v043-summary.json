@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "issues": [],
+  "foregroundSampledSeconds": 847.6352232000008,
+  "backgroundSampledSeconds": 950.1929265999988,
+  "elapsedSeconds": 1800.0512853,
+  "sampleCount": 1723,
+  "deadSamples": 660,
+  "samplingGaps": [],
+  "peakWorkingSetBytes": 956985344,
+  "peakPrivateBytes": 1774538752,
+  "trainingReady": false,
+  "criteria": ">=1800 seconds total, >=600 seconds per focus state, no runtime issues or >5-second sample gaps",
+  "limitation": "Focus duration is estimated between equal-focus sample endpoints. This checks runtime continuity, not action correctness, determinism or a death-free training scene.",
+  "sourceReport": "runs\\stability-v043\\report.json",
+  "sourceSha256": "10e56f7063eeb764804325f76e4187414b6595780e27fc8418e7a9adb0823e98"
+}

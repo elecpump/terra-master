@@ -1,0 +1,18 @@
+{
+  "phaseOrder": [
+    "background",
+    "foreground"
+  ],
+  "deathPolicy": "record separately; runtime continuity does not imply training-ready",
+  "schema": 1,
+  "manifestSha256": "9fdc7cf20429df5c47b48eff6d16ec545ff4017dfd1f233817a7399274bb964b",
+  "configuredAtUtc": "2026-09-10T16:06:29.2292042Z",
+  "command": "measure_runtime.py --seconds 1800 --output runs/stability-v043/report.json --progress-output runs/stability-v043/progress.json",
+  "targetPhaseSeconds": 900,
+  "samplerSha256": "edfeed7959ade9089cba316a040f78c6eee54be1e2568bebc2a0056237413299",
+  "sampling": "read-only ping/observe/runtime at approximately 1 Hz; process memory every 10 samples",
+  "bridgeVersion": "0.4.3",
+  "maximumProcesses": 1,
+  "requestedSeconds": 1800,
+  "acceptance": ">=1800 seconds total; >=600 seconds per focus state; no runtime errors; no sampling gap >5 seconds; death counted separately"
+}

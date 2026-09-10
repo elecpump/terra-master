@@ -55,6 +55,15 @@
 .\.venv\Scripts\python.exe measure_runtime.py --seconds 60 --output runs/runtime-60s.json
 ```
 
-采样 duration 范围 2–1800 秒；每秒读取 ping/observe，每十个样本读取已核对进程路径的工作集和 private bytes。记录实例重启、世界会话变化、帧号停滞/回退、陈旧快照及采样不足；死亡样本单独计数。该工具不发动作、不 reset、不管理进程，不会声称训练就绪。它没有观测实际前台窗口，因此即使持续 1800 秒通过也不能独自满足“30 分钟前后台稳定性”门槛。
+采样 duration 范围 2–1800 秒；每秒读取 ping/observe，每十个样本读取已核对进程路径的工作集和 private bytes。记录实例重启、世界会话变化、帧号停滞/回退、陈旧快照及采样不足；死亡样本单独计数。该工具不发动作、不 reset、不管理进程，不会声称训练就绪。新版用 Windows 前台进程独立记录焦点，0.4.1–0.4.3 同时读取 runtime 与引擎焦点作对照。
+
+30 分钟验收目标是前后台各 15 分钟，最低要求总计 1800 秒、每种状态至少 600 秒、无运行异常或超过 5 秒的采样空档。相邻样本焦点一致时估算该间隔的焦点时长；不把切换间隔归入任何一侧。死亡数量如实报告，运行连续性通过不等于场景或训练就绪。
+
+```powershell
+.\.venv\Scripts\python.exe measure_runtime.py --seconds 1800 --output runs/stability/report.json --progress-output runs/stability/progress.json
+.\.venv\Scripts\python.exe summarize_stability.py runs/stability/report.json --output evidence/stability-summary.json
+```
+
+`--progress-output` 每约 30 秒写出简要进展，最终写入结论。完整逐秒报告放在 runs 中；汇总包含原报告 SHA-256，可核对原始证据。未达到时长、焦点覆盖或采样完整性时汇总明确失败，不以短测拼凑 30 分钟结果。
 
 本阶段仍不提供完整世界 reset、死亡 terminated transition、PPO 训练、同步推进或多实例能力。独立存档不等于受控导航场景；自然生成世界仍会刷怪、演化和杀死角色。
