@@ -1,0 +1,1048 @@
+[
+  {
+    "action": "right",
+    "ack": {
+      "protocol": 1,
+      "status": "accepted",
+      "actionId": 1,
+      "action": "right",
+      "durationMs": 250
+    },
+    "before": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 30,
+      "sampledAtUnixMs": 1788966835763,
+      "control": {
+        "actionId": 0,
+        "appliedId": 0,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "world": {
+        "id": 1124809444,
+        "widthTiles": 6400,
+        "heightTiles": 1800
+      },
+      "player": {
+        "x": 51214,
+        "y": 6422,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 94,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "samples": [
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 36,
+        "sampledAtUnixMs": 1788966835862,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 2,
+          "action": "right",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51214.293,
+          "y": 6422,
+          "velocityX": 0.1936,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 42,
+        "sampledAtUnixMs": 1788966835962,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 8,
+          "action": "right",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51217.484,
+          "y": 6422,
+          "velocityX": 0.7744,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 42,
+        "sampledAtUnixMs": 1788966835962,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 8,
+          "action": "right",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51217.484,
+          "y": 6422,
+          "velocityX": 0.7744,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 42,
+        "sampledAtUnixMs": 1788966835962,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 8,
+          "action": "right",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51217.484,
+          "y": 6422,
+          "velocityX": 0.7744,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 48,
+        "sampledAtUnixMs": 1788966836062,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 14,
+          "action": "right",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51224.164,
+          "y": 6422,
+          "velocityX": 1.3551998,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 54,
+        "sampledAtUnixMs": 1788966836162,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51229.88,
+          "y": 6420.121,
+          "velocityX": 0.45199972,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 54,
+        "sampledAtUnixMs": 1788966836162,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51229.88,
+          "y": 6420.121,
+          "velocityX": 0.45199972,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 60,
+        "sampledAtUnixMs": 1788966836263,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 60,
+        "sampledAtUnixMs": 1788966836263,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 66,
+        "sampledAtUnixMs": 1788966836362,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 72,
+        "sampledAtUnixMs": 1788966836462,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 72,
+        "sampledAtUnixMs": 1788966836462,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 78,
+        "sampledAtUnixMs": 1788966836562,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 78,
+        "sampledAtUnixMs": 1788966836562,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 84,
+        "sampledAtUnixMs": 1788966836662,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    ],
+    "applied": true,
+    "expired": true
+  },
+  {
+    "action": "jump",
+    "ack": {
+      "protocol": 1,
+      "status": "accepted",
+      "actionId": 2,
+      "action": "jump",
+      "durationMs": 250
+    },
+    "before": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 84,
+      "sampledAtUnixMs": 1788966836662,
+      "control": {
+        "actionId": 1,
+        "appliedId": 1,
+        "appliedFrames": 15,
+        "action": "stop",
+        "active": false
+      },
+      "world": {
+        "id": 1124809444,
+        "widthTiles": 6400,
+        "heightTiles": 1800
+      },
+      "player": {
+        "x": 51230.184,
+        "y": 6419.8164,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 94,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": 1
+      }
+    },
+    "samples": [
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 84,
+        "sampledAtUnixMs": 1788966836662,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 84,
+        "sampledAtUnixMs": 1788966836662,
+        "control": {
+          "actionId": 1,
+          "appliedId": 1,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6419.8164,
+          "velocityX": 0,
+          "velocityY": 0,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 90,
+        "sampledAtUnixMs": 1788966836762,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 5,
+          "action": "jump",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6396.767,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 96,
+        "sampledAtUnixMs": 1788966836862,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 11,
+          "action": "jump",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6369.108,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 96,
+        "sampledAtUnixMs": 1788966836862,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 11,
+          "action": "jump",
+          "active": true
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6369.108,
+          "velocityX": 0,
+          "velocityY": -4.61,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 102,
+        "sampledAtUnixMs": 1788966836962,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6342.6484,
+          "velocityX": 0,
+          "velocityY": -3.81,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 102,
+        "sampledAtUnixMs": 1788966836962,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6342.6484,
+          "velocityX": 0,
+          "velocityY": -3.81,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 108,
+        "sampledAtUnixMs": 1788966837062,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6328.1885,
+          "velocityX": 0,
+          "velocityY": -1.4099996,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 108,
+        "sampledAtUnixMs": 1788966837062,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6328.1885,
+          "velocityX": 0,
+          "velocityY": -1.4099996,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 114,
+        "sampledAtUnixMs": 1788966837162,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6328.129,
+          "velocityX": 0,
+          "velocityY": 0.99000037,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 114,
+        "sampledAtUnixMs": 1788966837162,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6328.129,
+          "velocityX": 0,
+          "velocityY": 0.99000037,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 120,
+        "sampledAtUnixMs": 1788966837262,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6342.469,
+          "velocityX": 0,
+          "velocityY": 3.3900006,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 120,
+        "sampledAtUnixMs": 1788966837262,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6342.469,
+          "velocityX": 0,
+          "velocityY": 3.3900006,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 126,
+        "sampledAtUnixMs": 1788966837362,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6371.2095,
+          "velocityX": 0,
+          "velocityY": 5.790001,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 126,
+        "sampledAtUnixMs": 1788966837362,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6371.2095,
+          "velocityX": 0,
+          "velocityY": 5.790001,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 132,
+        "sampledAtUnixMs": 1788966837462,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6414.3496,
+          "velocityX": 0,
+          "velocityY": 8.1900015,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      },
+      {
+        "protocol": 1,
+        "status": "in_world",
+        "tick": 132,
+        "sampledAtUnixMs": 1788966837462,
+        "control": {
+          "actionId": 2,
+          "appliedId": 2,
+          "appliedFrames": 15,
+          "action": "stop",
+          "active": false
+        },
+        "world": {
+          "id": 1124809444,
+          "widthTiles": 6400,
+          "heightTiles": 1800
+        },
+        "player": {
+          "x": 51230.184,
+          "y": 6414.3496,
+          "velocityX": 0,
+          "velocityY": 8.1900015,
+          "life": 94,
+          "maxLife": 100,
+          "mana": 20,
+          "dead": false,
+          "direction": 1
+        }
+      }
+    ],
+    "applied": true,
+    "expired": true
+  },
+  {
+    "test": "explicit_stop",
+    "state": {
+      "protocol": 1,
+      "status": "in_world",
+      "tick": 144,
+      "sampledAtUnixMs": 1788966837662,
+      "control": {
+        "actionId": 4,
+        "appliedId": 3,
+        "appliedFrames": 0,
+        "action": "stop",
+        "active": false
+      },
+      "world": {
+        "id": 1124809444,
+        "widthTiles": 6400,
+        "heightTiles": 1800
+      },
+      "player": {
+        "x": 51230.086,
+        "y": 6419.914,
+        "velocityX": 0,
+        "velocityY": 0,
+        "life": 94,
+        "maxLife": 100,
+        "mana": 20,
+        "dead": false,
+        "direction": -1
+      }
+    }
+  }
+]

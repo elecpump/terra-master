@@ -1,0 +1,5 @@
+displayName = Terra RL Bridge
+author = TerraMaster
+version = 0.3
+side = Client
+buildIgnore = *.csproj, bin/*, obj/*

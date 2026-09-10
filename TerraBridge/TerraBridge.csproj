@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(TmlInstallPath)/tMLMod.targets" Condition="'$(TmlInstallPath)' != ''" />
+  <Import Project="../tModLoader.targets" Condition="'$(TmlInstallPath)' == ''" />
+  <PropertyGroup>
+    <AssemblyName>TerraBridge</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>

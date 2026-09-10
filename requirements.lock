@@ -1,0 +1,2 @@
+# M0 diagnostic tools use Python 3.11 and the standard library only.
+# No third-party runtime dependencies. Training dependencies are not validated yet.

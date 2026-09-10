@@ -1,0 +1,1 @@
+Local telemetry and movement bridge for reinforcement learning experiments. TCP 127.0.0.1:17655. Single-player movement commands expire after at most one second. Supports ping, observe, act, stop.
